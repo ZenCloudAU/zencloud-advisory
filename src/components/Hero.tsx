@@ -21,18 +21,18 @@ export default function Hero() {
           letterSpacing: '-2px', lineHeight: 1.06,
           color: 'var(--text-primary)', marginBottom: 22,
         }}>
-          Enterprise architecture<br />
+          Clear technology decisions<br />
           <em style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--text-secondary)' }}>
-            at the speed of the decision.
+            for complex organisations.
           </em>
         </h1>
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 16, fontWeight: 300,
           lineHeight: 1.8, color: 'var(--text-secondary)',
-          maxWidth: 640, marginBottom: 36,
+          maxWidth: 660, marginBottom: 36,
         }}>
-          ZenCloud is an enterprise architecture and AI delivery advisory practice helping organisations turn cloud, security, governance, and transformation decisions into traceable, executable outcomes.
+          ZenCloud helps leaders make cloud, security, AI, governance, and transformation decisions clear, governed, and ready to execute.
         </p>
 
         <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -47,7 +47,7 @@ export default function Hero() {
             Engage — info@zencloud.com.au
           </button>
           <button
-            onClick={() => document.getElementById('ecosystem')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('ecosystem')?.scrollIntoView({ behavior: 'auto' })}
             style={{
               fontFamily: 'var(--font-mono)', fontSize: 12,
               color: 'var(--accent-amber)', background: 'none',
