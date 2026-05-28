@@ -17,11 +17,11 @@ function scrollToSection(id: string) {
     return
   }
 
-  const navOffset = 84
-  const top = el.getBoundingClientRect().top + window.scrollY - navOffset
+  const navOffset = 92
+  const top = Math.max(0, el.getBoundingClientRect().top + window.scrollY - navOffset)
 
-  window.history.replaceState(null, '', `#${id}`)
-  window.scrollTo({ top, behavior: 'smooth' })
+  window.scrollTo({ top, behavior: 'auto' })
+  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${id}`)
 }
 
 export default function Nav() {
