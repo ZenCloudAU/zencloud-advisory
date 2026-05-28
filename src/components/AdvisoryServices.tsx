@@ -31,6 +31,8 @@ const cards = [
   },
 ]
 
+const partners = ['Microsoft', 'Amazon Web Services', 'Google Cloud']
+
 export default function AdvisoryServices() {
   return (
     <section id="services" style={{
@@ -52,8 +54,31 @@ export default function AdvisoryServices() {
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-          color: 'var(--text-muted)', maxWidth: 560, marginBottom: 36,
+          color: 'var(--text-muted)', maxWidth: 620, marginBottom: 18,
         }}>Senior advisory for organisations that need architecture decisions to become governed execution, not more disconnected artefacts.</p>
+
+        <div style={{
+          display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 10,
+          background: 'var(--bg-surface)', border: '1px solid var(--border)',
+          borderRadius: 8, padding: '14px 16px', marginBottom: 36,
+        }}>
+          <span style={{
+            fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
+            letterSpacing: '1.6px', textTransform: 'uppercase', color: 'var(--text-ghost)',
+          }}>Cloud partner ecosystem</span>
+          {partners.map(partner => (
+            <span key={partner} style={{
+              fontFamily: 'var(--font-body)', fontSize: 12, fontWeight: 600,
+              color: 'var(--text-primary)', background: 'var(--bg-alt)',
+              border: '1px solid var(--border)', borderRadius: 999,
+              padding: '6px 10px',
+            }}>{partner}</span>
+          ))}
+          <span style={{
+            fontFamily: 'var(--font-body)', fontSize: 12, fontWeight: 300,
+            color: 'var(--text-muted)', lineHeight: 1.6,
+          }}>ZenCloud is a technical partner across Microsoft, AWS, and Google Cloud platform ecosystems.</span>
+        </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 16 }}>
           {cards.map(card => (
