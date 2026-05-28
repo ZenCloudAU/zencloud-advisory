@@ -1,13 +1,28 @@
 const internalLinks = [
-  { label: 'Home', href: '#top' },
-  { label: 'Advisory', href: '#advisory' },
-  { label: 'Services', href: '#services' },
-  { label: 'Velocity', href: '#ecosystem' },
-  { label: 'Tools', href: '#tools' },
-  { label: 'Insights', href: '#insights' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', id: 'top' },
+  { label: 'Advisory', id: 'advisory' },
+  { label: 'Services', id: 'services' },
+  { label: 'Velocity', id: 'ecosystem' },
+  { label: 'Tools', id: 'tools' },
+  { label: 'Insights', id: 'insights' },
+  { label: 'About', id: 'about' },
+  { label: 'Contact', id: 'contact' },
 ]
+
+function scrollToSection(id: string) {
+  const el = document.getElementById(id)
+
+  if (!el) {
+    window.location.hash = id
+    return
+  }
+
+  const navOffset = 84
+  const top = el.getBoundingClientRect().top + window.scrollY - navOffset
+
+  window.history.replaceState(null, '', `#${id}`)
+  window.scrollTo({ top, behavior: 'smooth' })
+}
 
 export default function Nav() {
   return (
@@ -23,23 +38,27 @@ export default function Nav() {
       padding: '10px 36px',
       flexWrap: 'wrap',
     }}>
-      <a href="#top" style={{
+      <button type="button" onClick={() => scrollToSection('top')} style={{
         fontFamily: 'var(--font-body)', fontSize: 17, fontWeight: 700,
-        letterSpacing: '-0.3px',
+        letterSpacing: '-0.3px', background: 'transparent', border: 0, cursor: 'pointer', padding: 0,
       }}>
         <span style={{ color: 'var(--text-primary)' }}>Zen</span>
         <span style={{ color: 'var(--accent-amber)' }}>Cloud</span>
         <span style={{ color: 'var(--text-primary)' }}> Advisory</span>
-      </a>
+      </button>
 
       <div style={{ display: 'inline-flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' }}>
-        {internalLinks.map(({ label, href }) => (
-          <a key={label} href={href}
-            style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)', transition: 'color 150ms' }}
+        {internalLinks.map(({ label, id }) => (
+          <button key={label} type="button"
+            onClick={() => scrollToSection(id)}
+            style={{
+              fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)',
+              transition: 'color 150ms', background: 'transparent', border: 0, cursor: 'pointer', padding: 0,
+            }}
             onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
             onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-muted)')}>
             {label}
-          </a>
+          </button>
         ))}
       </div>
 
