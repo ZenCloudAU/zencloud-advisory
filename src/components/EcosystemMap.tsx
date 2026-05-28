@@ -27,7 +27,7 @@ const nodes = [
     role: 'AI TOOLING',
     name: 'VAF Agentic Architect',
     desc: 'AI agent generating board-ready architecture packs across all six viewpoints. Brief in, governed artefacts out.',
-    link: 'https://velocityarchitectureframework.com/',
+    link: 'https://velocityarchitectureframework.com/app/portal.html',
     linkText: 'VAF Agentic Architect ↗',
     anchor: false,
   },
