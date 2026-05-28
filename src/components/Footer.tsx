@@ -1,30 +1,59 @@
+const links = [
+  { label: 'Velocity Framework', href: 'https://velocityarchitectureframework.com/' },
+  { label: 'Velocity Academy', href: 'https://velocityarchitecture.com.au/' },
+  { label: 'StudioSix', href: 'https://studiosix.com.au/' },
+  { label: 'EA Artefact Generator', href: 'https://ea.velocityarchitecture.com.au/' },
+  { label: 'VAF-SA', href: 'https://zencloudau.github.io/vaf-sa/' },
+  { label: 'VSF Match', href: 'https://zencloudau.github.io/vsf-match/' },
+  { label: 'Medium', href: 'https://medium.com/@ZencloudAU' },
+  { label: 'GitHub', href: 'https://github.com/ZenCloudAU' },
+]
+
 export default function Footer() {
   return (
-    <footer id="contact" style={{
+    <footer style={{
       background: 'var(--footer-bg)',
-      padding: '28px 36px',
+      padding: '32px 36px',
     }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <span style={{ fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 700 }}>
-          <span style={{ color: '#f8fafc' }}>Zen</span>
-          <span style={{ color: 'var(--accent-gold)' }}>Cloud</span>
-          <span style={{ color: '#f8fafc' }}> Advisory</span>
-        </span>
+      <div className="container" style={{ display: 'grid', gap: 20 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 20, flexWrap: 'wrap' }}>
+          <span style={{ fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 700 }}>
+            <span style={{ color: '#f8fafc' }}>Zen</span>
+            <span style={{ color: 'var(--accent-gold)' }}>Cloud</span>
+            <span style={{ color: '#f8fafc' }}> Advisory</span>
+          </span>
 
-        <span style={{
+          <span style={{
+            fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
+            letterSpacing: '1.5px', textTransform: 'uppercase',
+            color: '#cbd5e1',
+          }}>
+            Brisbane · Enterprise Architecture · AI Delivery Advisory
+          </span>
+
+          <a href="mailto:info@zencloud.com.au" style={{
+            fontFamily: 'var(--font-body)', fontSize: 13,
+            color: '#f8fafc', textDecoration: 'underline', textUnderlineOffset: 3,
+          }}>
+            info@zencloud.com.au
+          </a>
+        </div>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px 18px' }}>
+          {links.map(link => (
+            <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" style={{
+              fontFamily: 'var(--font-body)', fontSize: 12,
+              color: '#cbd5e1',
+            }}>{link.label}</a>
+          ))}
+        </div>
+
+        <p style={{
           fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
-          letterSpacing: '1.5px', textTransform: 'uppercase',
-          color: 'var(--text-footer)',
+          color: '#94a3b8', lineHeight: 1.6,
         }}>
-          SPRING HILL · BRISBANE · QLD
-        </span>
-
-        <a href="mailto:info@zencloud.com.au" style={{
-          fontFamily: 'var(--font-body)', fontSize: 13,
-          color: '#475569',
-        }}>
-          info@zencloud.com.au
-        </a>
+          ZenCloud advises. StudioSix produces. Velocity decides.
+        </p>
       </div>
     </footer>
   )
