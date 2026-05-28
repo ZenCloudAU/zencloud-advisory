@@ -2,21 +2,21 @@ const cells = [
   {
     tag: 'ENTRY POINT',
     name: 'ZenCloud Advisory',
-    body: 'Strategic framing, cloud governance, security posture, architecture leadership, and programme oversight. The advisory practice that all clients engage first.',
+    body: 'The commercial advisory front door. ZenCloud helps leaders frame the decision, understand the risk, and choose the right path forward.',
     linkText: 'You are here',
     href: null,
   },
   {
     tag: 'DELIVERY STUDIO',
     name: 'StudioSix',
-    body: 'Architecture-led delivery — intake through handover. Governed artefacts, traceable decisions, client transparency, and controlled execution. Routed from ZenCloud Advisory.',
+    body: 'The production and delivery worksite. StudioSix turns advisory intent into governed workflow, controlled artefacts, and practical execution.',
     linkText: 'studiosix.com.au ↗',
     href: 'https://studiosix.com.au',
   },
   {
     tag: 'METHOD',
     name: 'Velocity Architecture Framework™',
-    body: 'The shared open-source EA method. Six viewpoints, 18 artefacts, AI-powered agent. Free to use. The decision-first operating model for both practices.',
+    body: 'The decision-first architecture method. Velocity provides the shared language, viewpoints, artefacts, and governance model behind the work.',
     linkText: 'velocityarchitectureframework.com ↗',
     href: 'https://velocityarchitectureframework.com',
   },
@@ -39,12 +39,12 @@ export default function RoleClarity() {
         <h2 style={{
           fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 700,
           letterSpacing: '-0.5px', color: 'var(--text-primary)', marginBottom: 8,
-        }}>One ecosystem. Three roles.</h2>
+        }}>One ecosystem. Three clear roles.</h2>
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-          color: 'var(--text-muted)', maxWidth: 480, marginBottom: 36,
-        }}>ZenCloud advises. StudioSix produces. Velocity decides. Every client engagement starts here.</p>
+          color: 'var(--text-muted)', maxWidth: 520, marginBottom: 36,
+        }}>ZenCloud advises. StudioSix produces. Velocity decides. Clients start with ZenCloud and move into the right delivery layer when required.</p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
           {cells.map(cell => (
