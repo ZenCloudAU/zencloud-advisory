@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import ClientJourneyBand from './components/ClientJourneyBand'
 import RoleClarity from './components/RoleClarity'
 import AdvisoryServices from './components/AdvisoryServices'
+import EngagementOffers from './components/EngagementOffers'
 import EcosystemMap from './components/EcosystemMap'
 import VafStrip from './components/VafStrip'
 import ToolsSection from './components/ToolsSection'
@@ -20,6 +21,7 @@ export default function App() {
         <ClientJourneyBand />
         <RoleClarity />
         <AdvisoryServices />
+        <EngagementOffers />
         <EcosystemMap />
         <VafStrip />
         <ToolsSection />
