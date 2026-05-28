@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# ZenCloud Advisory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ZenCloud Advisory is the public advisory and engagement front door for the Velocity Architecture ecosystem.
 
-Currently, two official plugins are available:
+The site presents:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- enterprise architecture advisory
+- solution architecture and design authority
+- cloud and platform modernisation
+- security and governance alignment
+- AI-assisted delivery enablement
+- program recovery and delivery governance
+- architecture decision services
+- partner architecture office capabilities
 
-## React Compiler
+## Operating Model
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ZenCloud Advisory acts as the commercial and engagement layer.
 
-## Expanding the ESLint configuration
+Supporting ecosystem components:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Velocity Architecture Framework (methodology and governance model)
+- VAF-SA (solution architecture practice layer)
+- PMO Portal (intake, governance, mobilisation, and delivery coordination)
+- EA Artefact Generator (accelerated architecture artefact generation)
+- StudioSix (tooling, media, education, and productisation)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Engagement Flow
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Discovery conversation
+2. Customer Impact Statement
+3. Architecture Decision Health Check
+4. Decision Sprint or Readiness Sprint
+5. Fractional Architecture / Governance Support
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Primary Commercial Offers
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Architecture Decision Health Check
+- Architecture Decision Sprint
+- AI / Cloud / Cyber Readiness Sprint
+- Fractional Enterprise Architect / Design Authority
+- Partner Architecture Office
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technology
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+- TypeScript
+- Vite
+- GitHub Actions deployment
+
+## Domain
+
+Production:
+
+https://www.zencloud.com.au
+
+## Positioning
+
+ZenCloud focuses on decision-first advisory:
+
+Turning unclear technology situations into governed execution, practical action plans, and delivery-ready outcomes.
