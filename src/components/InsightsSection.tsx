@@ -1,15 +1,21 @@
 const channels = [
   {
+    name: 'Velocity Research Library',
+    label: 'Rendered research papers',
+    body: 'Reader-facing HTML research library for working papers, governance analysis, framework comparisons, and source-backed Markdown rendering.',
+    href: 'https://zencloudau.github.io/velocity-architecture/research/',
+  },
+  {
+    name: 'IT Governance Working Paper',
+    label: 'Featured paper',
+    body: 'A rendered HTML reader page for the comparative analysis of COBIT, ITIL, TOGAF, ISO 38500, NIST CSF, PMBOK, SAFe, and ArchiMate.',
+    href: 'https://zencloudau.github.io/velocity-architecture/research/it-governance-frameworks-australian-public-sector-2025-2026/',
+  },
+  {
     name: 'Medium',
     label: 'Essays and book material',
     body: 'Long-form architecture essays, decision-system writing, and public book development material.',
     href: 'https://medium.com/@ZencloudAU',
-  },
-  {
-    name: 'Substack',
-    label: 'Newsletter and commentary',
-    body: 'Broader commentary stream for ideas, publishing updates, and audience relationship building.',
-    href: 'https://www.zencloud.com.au/',
   },
   {
     name: 'Velocity Academy',
@@ -46,9 +52,9 @@ export default function InsightsSection() {
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-          color: 'var(--text-muted)', maxWidth: 620, marginBottom: 36,
+          color: 'var(--text-muted)', maxWidth: 660, marginBottom: 36,
         }}>
-          ZenCloud curates selected advisory perspectives. Deeper essays, book material, learning assets, and framework content live in the right ecosystem channel instead of being duplicated here.
+          ZenCloud curates selected advisory perspectives. Research papers open in rendered HTML reader pages, while deeper essays, book material, learning assets, and framework content live in the right ecosystem channel.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 16 }}>
