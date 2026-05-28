@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section style={{
+    <section id="top" style={{
       background: 'var(--bg-surface)',
       borderBottom: '1px solid var(--border)',
       padding: '68px 36px 60px',
@@ -11,7 +11,7 @@ export default function Hero() {
           letterSpacing: '2.5px', textTransform: 'uppercase',
           color: 'var(--accent-amber)', marginBottom: 18,
         }}>
-          ZENCLOUD ADVISORY · BRISBANE, QLD · PRINCIPAL ARCHITECT
+          ZENCLOUD ADVISORY · BRISBANE, QLD · ENTERPRISE ARCHITECTURE
         </p>
 
         <h1 style={{
@@ -21,21 +21,21 @@ export default function Hero() {
           letterSpacing: '-2px', lineHeight: 1.06,
           color: 'var(--text-primary)', marginBottom: 22,
         }}>
-          Architecture advisory.<br />
+          Enterprise architecture<br />
           <em style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--text-secondary)' }}>
-            The decision layer.
+            at the speed of the decision.
           </em>
         </h1>
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 16, fontWeight: 300,
           lineHeight: 1.8, color: 'var(--text-secondary)',
-          maxWidth: 560, marginBottom: 36,
+          maxWidth: 640, marginBottom: 36,
         }}>
-          ZenCloud Advisory is the client entry point and parent practice for the Velocity Architecture ecosystem. We provide enterprise architecture strategy, cloud governance, security posture, and senior advisory leadership — then route clients into StudioSix for architecture-led delivery and governed execution.
+          ZenCloud is an enterprise architecture and AI delivery advisory practice helping organisations turn cloud, security, governance, and transformation decisions into traceable, executable outcomes.
         </p>
 
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
           <button
             onClick={() => { window.location.href = 'mailto:info@zencloud.com.au' }}
             style={{
@@ -54,7 +54,7 @@ export default function Hero() {
               border: 'none', textDecoration: 'underline', textUnderlineOffset: 3,
               minHeight: 44,
             }}>
-            Explore the ecosystem →
+            View the ecosystem →
           </button>
         </div>
       </div>
