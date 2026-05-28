@@ -3,13 +3,13 @@ const channels = [
     name: 'Velocity Research Library',
     label: 'Rendered research papers',
     body: 'Reader-facing HTML research library for working papers, governance analysis, framework comparisons, and source-backed Markdown rendering.',
-    href: 'https://zencloudau.github.io/velocity-architecture/research/',
+    href: 'https://velocityarchitectureframework.com/research/',
   },
   {
     name: 'IT Governance Working Paper',
     label: 'Featured paper',
     body: 'A rendered HTML reader page for the comparative analysis of COBIT, ITIL, TOGAF, ISO 38500, NIST CSF, PMBOK, SAFe, and ArchiMate.',
-    href: 'https://zencloudau.github.io/velocity-architecture/research/it-governance-frameworks-australian-public-sector-2025-2026/',
+    href: 'https://velocityarchitectureframework.com/research/it-governance-frameworks-australian-public-sector-2025-2026/',
   },
   {
     name: 'Medium',
