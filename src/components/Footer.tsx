@@ -1,4 +1,5 @@
 const links = [
+  { label: 'Profile', href: '/profile/' },
   { label: 'Velocity Framework', href: 'https://velocityarchitectureframework.com/' },
   { label: 'Velocity Academy', href: 'https://velocityarchitecture.com.au/' },
   { label: 'StudioSix', href: 'https://studiosix.com.au/' },
@@ -41,7 +42,7 @@ export default function Footer() {
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px 18px' }}>
           {links.map(link => (
-            <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" style={{
+            <a key={link.label} href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined} style={{
               fontFamily: 'var(--font-body)', fontSize: 12,
               color: '#cbd5e1',
             }}>{link.label}</a>
