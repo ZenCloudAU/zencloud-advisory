@@ -29,14 +29,15 @@ export default function ContactSection() {
 
           <p style={{
             fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-            color: '#cbd5e1', maxWidth: 620, lineHeight: 1.7,
+            color: '#cbd5e1', maxWidth: 650, lineHeight: 1.7,
           }}>
-            Use ZenCloud for enterprise architecture advisory, cloud and security governance, AI-assisted delivery enablement, and complex program recovery.
+            Use ZenCloud when a cloud, AI, cyber, platform, vendor, or delivery decision needs plain-language framing,
+            executive visibility, and a practical action plan. The first step is an Architecture Decision Health Check.
           </p>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-          <a href="mailto:info@zencloud.com.au" style={{
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 10 }}>
+          <a href="mailto:info@zencloud.com.au?subject=Architecture%20Decision%20Health%20Check" style={{
             background: '#f8fafc',
             color: 'var(--footer-bg)',
             borderRadius: 8,
@@ -46,6 +47,14 @@ export default function ContactSection() {
             fontWeight: 700,
             whiteSpace: 'nowrap',
             display: 'inline-block',
+            textDecoration: 'none',
+          }}>Book Health Check</a>
+          <a href="mailto:info@zencloud.com.au" style={{
+            color: '#cbd5e1',
+            fontFamily: 'var(--font-body)',
+            fontSize: 12,
+            fontWeight: 300,
+            textDecoration: 'none',
           }}>info@zencloud.com.au</a>
         </div>
       </div>
