@@ -44,17 +44,17 @@ export default function Hero() {
               padding: '0 22px', minHeight: 44,
               borderRadius: 8, border: 'none',
             }}>
-            Engage — info@zencloud.com.au
+            Book Health Check
           </button>
           <button
-            onClick={() => document.getElementById('ecosystem')?.scrollIntoView({ behavior: 'auto' })}
+            onClick={() => document.getElementById('offers')?.scrollIntoView({ behavior: 'auto' })}
             style={{
               fontFamily: 'var(--font-mono)', fontSize: 12,
               color: 'var(--accent-amber)', background: 'none',
               border: 'none', textDecoration: 'underline', textUnderlineOffset: 3,
               minHeight: 44,
             }}>
-            View the ecosystem →
+            View engagement offers →
           </button>
         </div>
       </div>
