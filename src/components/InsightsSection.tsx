@@ -1,5 +1,11 @@
 const channels = [
   {
+    name: 'Velocity Publication Library',
+    label: 'Research, patterns, guides and artefacts',
+    body: 'Rendered public library for research papers, cloud and architecture patterns, diagnostics, guides, specifications, templates, viewpoints, and selected artefacts.',
+    href: 'https://zencloudau.github.io/velocity-architecture/publications/',
+  },
+  {
     name: 'Velocity Research Library',
     label: 'Rendered research papers',
     body: 'Reader-facing HTML research library for working papers, governance analysis, framework comparisons, and source-backed Markdown rendering.',
@@ -54,7 +60,7 @@ export default function InsightsSection() {
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
           color: 'var(--text-muted)', maxWidth: 660, marginBottom: 36,
         }}>
-          ZenCloud curates selected advisory perspectives. Research papers open in rendered HTML reader pages, while deeper essays, book material, learning assets, and framework content live in the right ecosystem channel.
+          ZenCloud curates selected advisory perspectives. Research papers, patterns, guides, diagnostics, and selected artefacts open in rendered HTML reader pages, while essays, book material, learning assets, and framework content live in the right ecosystem channel.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 16 }}>
