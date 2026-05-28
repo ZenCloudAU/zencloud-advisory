@@ -19,7 +19,7 @@ export default function ClientJourneyBand() {
           fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 300, lineHeight: 1.5,
           color: 'var(--text-secondary)',
         }}>
-          All clients engage ZenCloud Advisory first. Advisory frames the mandate. StudioSix delivers the governed execution. VAF provides the method.
+          Start with ZenCloud. Frame the decision. Use StudioSix and Velocity when the work needs governed delivery.
         </span>
       </div>
     </div>
