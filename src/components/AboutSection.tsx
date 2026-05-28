@@ -17,7 +17,7 @@ export default function AboutSection() {
           <h2 style={{
             fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 700,
             letterSpacing: '-0.5px', color: 'var(--text-primary)', marginBottom: 8,
-          }}>Enterprise experience. Decision-first practice.</h2>
+          }}>Senior architecture judgement for complex change.</h2>
         </div>
 
         <div>
@@ -32,7 +32,7 @@ export default function AboutSection() {
             fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
             color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: 18,
           }}>
-            The practice works across executives, architecture boards, delivery teams, vendors, and technical platforms to turn complex decisions into practical, governed, implementation-ready outcomes.
+            The practice helps executives and delivery teams simplify complex technology choices, make accountable decisions, and move from strategy to controlled execution.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 12, marginTop: 24 }}>
