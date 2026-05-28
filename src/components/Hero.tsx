@@ -37,7 +37,7 @@ export default function Hero() {
 
         <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
           <button
-            onClick={() => { window.location.href = 'mailto:info@zencloud.com.au' }}
+            onClick={() => { window.location.href = 'mailto:info@zencloud.com.au?subject=Architecture%20Decision%20Health%20Check' }}
             style={{
               background: 'var(--footer-bg)', color: '#f8fafc',
               fontSize: 13, fontWeight: 500,
