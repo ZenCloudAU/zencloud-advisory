@@ -19,8 +19,8 @@ const nodes = [
     role: 'FRAMEWORK · OPEN SOURCE',
     name: 'Velocity Architecture Framework™',
     desc: 'Six viewpoints, 18 artefacts. Decision-first EA. Free to use.',
-    link: 'https://zencloudau.github.io/velocity-architecture/',
-    linkText: 'velocity-architecture site ↗',
+    link: 'https://velocityarchitectureframework.com/',
+    linkText: 'velocityarchitectureframework.com ↗',
     anchor: false,
   },
   {
@@ -35,8 +35,8 @@ const nodes = [
     role: 'PRACTITIONER METHOD',
     name: 'VAF·SA',
     desc: 'Solution architecture practitioner framework. Six modules, two pillars, decision-first scoping through delivery.',
-    link: 'https://velocityarchitectureframework.com/',
-    linkText: 'velocityarchitectureframework.com ↗',
+    link: 'https://zencloudau.github.io/vaf-sa/',
+    linkText: 'zencloudau.github.io/vaf-sa ↗',
     anchor: false,
   },
   {
