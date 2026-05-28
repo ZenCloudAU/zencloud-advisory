@@ -1,10 +1,11 @@
 const links = [
   { label: 'Profile', href: '/profile/' },
-  { label: 'Velocity Framework', href: 'https://velocityarchitectureframework.com/' },
+  { label: 'Velocity Framework', href: 'https://zencloudau.github.io/velocity-architecture/' },
+  { label: 'VAF Agentic Architect', href: 'https://zencloudau.github.io/velocity-architecture/app/portal.html' },
   { label: 'Velocity Academy', href: 'https://velocityarchitecture.com.au/' },
   { label: 'StudioSix', href: 'https://studiosix.com.au/' },
   { label: 'EA Artefact Generator', href: 'https://ea.velocityarchitecture.com.au/' },
-  { label: 'VAF-SA', href: 'https://zencloudau.github.io/vaf-sa/' },
+  { label: 'VAF-SA', href: 'https://velocityarchitectureframework.com/' },
   { label: 'VSF Match', href: 'https://zencloudau.github.io/vsf-match/' },
   { label: 'Medium', href: 'https://medium.com/@ZencloudAU' },
   { label: 'GitHub', href: 'https://github.com/ZenCloudAU' },
