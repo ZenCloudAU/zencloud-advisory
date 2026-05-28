@@ -3,19 +3,19 @@ const channels = [
     name: 'Velocity Publication Library',
     label: 'Research, patterns, guides and artefacts',
     body: 'Rendered public library for research papers, cloud and architecture patterns, diagnostics, guides, specifications, templates, viewpoints, and selected artefacts.',
-    href: 'https://velocityarchitectureframework.com/publications/',
+    href: 'https://zencloudau.github.io/velocity-architecture/publications/',
   },
   {
     name: 'Velocity Research Library',
     label: 'Rendered research papers',
     body: 'Reader-facing HTML research library for working papers, governance analysis, framework comparisons, and source-backed Markdown rendering.',
-    href: 'https://velocityarchitectureframework.com/research/',
+    href: 'https://zencloudau.github.io/velocity-architecture/research/',
   },
   {
     name: 'IT Governance Working Paper',
     label: 'Featured paper',
     body: 'A rendered HTML reader page for the comparative analysis of COBIT, ITIL, TOGAF, ISO 38500, NIST CSF, PMBOK, SAFe, and ArchiMate.',
-    href: 'https://velocityarchitectureframework.com/research/it-governance-frameworks-australian-public-sector-2025-2026/',
+    href: 'https://zencloudau.github.io/velocity-architecture/research/it-governance-frameworks-australian-public-sector-2025-2026/',
   },
   {
     name: 'Medium',
@@ -33,7 +33,7 @@ const channels = [
     name: 'Velocity Framework',
     label: 'Method authority',
     body: 'Decision-first architecture method, viewpoints, artefacts, operating model, and framework documentation.',
-    href: 'https://velocityarchitectureframework.com/',
+    href: 'https://zencloudau.github.io/velocity-architecture/',
   },
 ]
 
