@@ -1,29 +1,39 @@
 const cards = [
   {
-    num: '01 — STRATEGY',
-    title: 'Cloud & Architecture Strategy',
-    body: 'Cloud direction, platform selection, governance model, and delivery approach — aligned to business goals. Framework-level, not vendor-level. Pre-engagement framing before StudioSix mobilises.',
+    num: '01 — ENTERPRISE',
+    title: 'Enterprise Architecture Advisory',
+    body: 'Target-state direction, decision governance, capability alignment, architecture board support, and transformation framing for complex organisations.',
   },
   {
-    num: '02 — LEADERSHIP',
-    title: 'CTO / Principal Architecture Advisory',
-    body: 'Senior-level guidance for boards, executives, and programme leads. Bridges business intent and technical execution. Independent of any delivery vendor or platform. Engagement model: retained or milestone-based.',
+    num: '02 — SOLUTION',
+    title: 'Solution Architecture & Design Authority',
+    body: 'Practical solution architecture for delivery teams: options, decisions, risks, constraints, guardrails, and implementation-ready artefacts.',
   },
   {
-    num: '03 — SECURITY',
-    title: 'Identity & Security Posture',
-    body: 'Cloud security strategy, IAM governance, and risk posture framing. Architecture-layer advisory — not implementation. Aligned to APRA CPS 234, IRAP, and zero-trust patterns where applicable.',
+    num: '03 — CLOUD',
+    title: 'Cloud Strategy & Platform Modernisation',
+    body: 'Cloud direction, platform governance, operating model design, migration framing, and modernisation roadmaps aligned to business outcomes.',
   },
   {
-    num: '04 — OVERSIGHT',
-    title: 'Programme Oversight & Recovery',
-    body: 'Independent oversight where architecture decisions, governance artefacts, or executive reporting have broken down. Restores delivery control without displacing existing teams. Advisory posture only.',
+    num: '04 — SECURITY',
+    title: 'Security, Identity & Governance',
+    body: 'Security posture, identity, access, control design, risk framing, and governance embedded into architecture decisions from the start.',
+  },
+  {
+    num: '05 — AI DELIVERY',
+    title: 'AI-Assisted Delivery Enablement',
+    body: 'Safe adoption of AI-assisted architecture workflows, prompts, artefact generation, review controls, and decision traceability.',
+  },
+  {
+    num: '06 — RECOVERY',
+    title: 'Program Recovery & Delivery Governance',
+    body: 'Restores clarity in fragmented or at-risk delivery through decision flow, governance cadence, traceability, and executive reporting.',
   },
 ]
 
 export default function AdvisoryServices() {
   return (
-    <section id="advisory-services" style={{
+    <section id="services" style={{
       background: 'var(--bg-alt)',
       borderBottom: '1px solid var(--border)',
       padding: '52px 36px',
@@ -38,14 +48,14 @@ export default function AdvisoryServices() {
         <h2 style={{
           fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 700,
           letterSpacing: '-0.5px', color: 'var(--text-primary)', marginBottom: 8,
-        }}>What ZenCloud Advisory provides</h2>
+        }}>What ZenCloud provides</h2>
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-          color: 'var(--text-muted)', maxWidth: 480, marginBottom: 36,
-        }}>Strategic and leadership services only. Delivery and artefact production are StudioSix's domain.</p>
+          color: 'var(--text-muted)', maxWidth: 560, marginBottom: 36,
+        }}>Senior advisory for organisations that need architecture decisions to become governed execution, not more disconnected artefacts.</p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 16 }}>
           {cards.map(card => (
             <div key={card.num}
               style={{
