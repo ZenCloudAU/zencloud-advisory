@@ -2,6 +2,7 @@ const internalLinks = [
   { label: 'Home', id: 'top' },
   { label: 'Advisory', id: 'advisory' },
   { label: 'Services', id: 'services' },
+  { label: 'Offers', id: 'offers' },
   { label: 'Velocity', id: 'ecosystem' },
   { label: 'Tools', id: 'tools' },
   { label: 'Insights', id: 'insights' },
@@ -67,14 +68,14 @@ export default function Nav() {
       </div>
 
       <button
-        onClick={() => { window.location.href = 'mailto:info@zencloud.com.au' }}
+        onClick={() => { window.location.href = 'mailto:info@zencloud.com.au?subject=Architecture%20Decision%20Health%20Check' }}
         style={{
           background: 'var(--footer-bg)', color: '#f8fafc',
           fontSize: 13, fontWeight: 500,
           padding: '0 18px', minHeight: 44,
           borderRadius: 8, border: 'none',
         }}>
-        Engage
+        Book Health Check
       </button>
     </nav>
   )
