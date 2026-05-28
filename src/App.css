@@ -33,6 +33,31 @@
   --font-display: 'Playfair Display', serif;
   --font-body:    'DM Sans', sans-serif;
   --font-mono:    'DM Mono', monospace;
+
+  /* VAF master design system tokens */
+  --vaf-bg:             var(--bg-page);
+  --vaf-surface:        var(--bg-surface);
+  --vaf-surface-raised: var(--bg-alt);
+  --vaf-border:         var(--border);
+  --vaf-border-strong:  var(--border-strong);
+  --vaf-text:           var(--text-primary);
+  --vaf-text-2:         var(--text-secondary);
+  --vaf-text-3:         var(--text-ghost);
+  --vaf-accent:         var(--accent-amber);
+  --vaf-accent-hover:   var(--accent-amber-dark);
+  --vaf-accent-subtle:  #FFF7ED;
+  --vaf-accent-border:  #FED7AA;
+  --vaf-navy:           #1E3A5F;
+  --vaf-navy-dark:      #162D4A;
+  --vaf-font-heading:   var(--font-display);
+  --vaf-font-body:      var(--font-body);
+  --vaf-font-mono:      var(--font-mono);
+  --vaf-radius-sm:      4px;
+  --vaf-radius-md:      8px;
+  --vaf-radius-lg:      10px;
+  --vaf-shadow:         var(--shadow-sm);
+  --vaf-shadow-md:      var(--shadow-hover);
+  --vaf-transition:     200ms ease;
 }
 
 body {
