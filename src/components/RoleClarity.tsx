@@ -28,6 +28,7 @@ export default function RoleClarity() {
       background: 'var(--bg-surface)',
       borderBottom: '1px solid var(--border)',
       padding: '52px 36px',
+      scrollMarginTop: 84,
     }}>
       <div className="container">
         <p style={{
@@ -43,10 +44,27 @@ export default function RoleClarity() {
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-          color: 'var(--text-muted)', maxWidth: 520, marginBottom: 36,
-        }}>ZenCloud advises. StudioSix produces. Velocity decides. Clients start with ZenCloud and move into the right delivery layer when required.</p>
+          color: 'var(--text-muted)', maxWidth: 650, marginBottom: 18, lineHeight: 1.7,
+        }}>
+          Clients start with ZenCloud. If the work needs production delivery or deeper framework material, ZenCloud routes the engagement into the right ecosystem layer.
+        </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+        <div style={{
+          background: 'var(--bg-alt)',
+          border: '1px solid var(--border)',
+          borderRadius: 8,
+          padding: '14px 16px',
+          marginBottom: 30,
+        }}>
+          <p style={{
+            fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 300,
+            color: 'var(--text-secondary)', lineHeight: 1.7, margin: 0,
+          }}>
+            Buying path: start with an Architecture Decision Health Check. Ecosystem path: use StudioSix, Velocity, tools, and research only when they help the client decision.
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
           {cells.map(cell => (
             <div key={cell.tag}
               style={{
