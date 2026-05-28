@@ -4,8 +4,9 @@ export default function AboutSection() {
       background: 'var(--bg-alt)',
       borderBottom: '1px solid var(--border)',
       padding: '52px 36px',
+      scrollMarginTop: 84,
     }}>
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 36, alignItems: 'start' }}>
+      <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 36, alignItems: 'start' }}>
         <div>
           <p style={{
             fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
@@ -34,7 +35,7 @@ export default function AboutSection() {
             The practice works across executives, architecture boards, delivery teams, vendors, and technical platforms to turn complex decisions into practical, governed, implementation-ready outcomes.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginTop: 24 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 12, marginTop: 24 }}>
             {['Enterprise architecture', 'Cloud and security', 'AI-assisted delivery'].map(item => (
               <div key={item} style={{
                 background: 'var(--bg-surface)', border: '1px solid var(--border)',
