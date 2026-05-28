@@ -1,29 +1,39 @@
+const internalLinks = [
+  { label: 'Home', href: '#top' },
+  { label: 'Advisory', href: '#advisory' },
+  { label: 'Services', href: '#services' },
+  { label: 'Velocity', href: '#ecosystem' },
+  { label: 'Tools', href: '#tools' },
+  { label: 'Insights', href: '#insights' },
+  { label: 'About', href: '#about' },
+  { label: 'Contact', href: '#contact' },
+]
+
 export default function Nav() {
   return (
     <nav style={{
       position: 'sticky', top: 0, zIndex: 100,
-      height: 56,
-      background: 'rgba(255,255,255,0.85)',
+      minHeight: 56,
+      background: 'rgba(255,255,255,0.88)',
       backdropFilter: 'blur(18px)',
       WebkitBackdropFilter: 'blur(18px)',
       borderBottom: '1px solid var(--border)',
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-      padding: '0 36px',
+      gap: 20,
+      padding: '10px 36px',
+      flexWrap: 'wrap',
     }}>
-      <span style={{
+      <a href="#top" style={{
         fontFamily: 'var(--font-body)', fontSize: 17, fontWeight: 700,
         letterSpacing: '-0.3px',
       }}>
         <span style={{ color: 'var(--text-primary)' }}>Zen</span>
         <span style={{ color: 'var(--accent-amber)' }}>Cloud</span>
         <span style={{ color: 'var(--text-primary)' }}> Advisory</span>
-      </span>
+      </a>
 
-      <div style={{ display: 'inline-flex', gap: 28, alignItems: 'center' }}>
-        {[
-          { label: 'Advisory', href: '#advisory' },
-          { label: 'Ecosystem', href: '#ecosystem' },
-        ].map(({ label, href }) => (
+      <div style={{ display: 'inline-flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' }}>
+        {internalLinks.map(({ label, href }) => (
           <a key={label} href={href}
             style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)', transition: 'color 150ms' }}
             onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
@@ -31,23 +41,6 @@ export default function Nav() {
             {label}
           </a>
         ))}
-        {[
-          { label: 'VAF™ ↗', href: 'https://zencloudau.github.io/velocity-architecture' },
-          { label: 'StudioSix ↗', href: 'https://studiosix.com.au' },
-        ].map(({ label, href }) => (
-          <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-            style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)', transition: 'color 150ms' }}
-            onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
-            onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-muted)')}>
-            {label}
-          </a>
-        ))}
-        <a href="#contact"
-          style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)', transition: 'color 150ms' }}
-          onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
-          onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-muted)')}>
-          Contact
-        </a>
       </div>
 
       <button
