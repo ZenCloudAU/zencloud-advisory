@@ -60,6 +60,10 @@ export default function Nav() {
             {label}
           </button>
         ))}
+        <a href="/profile/" style={{
+          fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)',
+          textDecoration: 'none',
+        }}>Profile</a>
       </div>
 
       <button
