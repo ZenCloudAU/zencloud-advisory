@@ -4,13 +4,14 @@ export default function ContactSection() {
       background: 'var(--bg-surface)',
       borderBottom: '1px solid var(--border)',
       padding: '52px 36px',
+      scrollMarginTop: 84,
     }}>
       <div className="container" style={{
         background: 'var(--footer-bg)',
         borderRadius: 10,
         padding: '34px 36px',
-        display: 'flex',
-        justifyContent: 'space-between',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
         alignItems: 'center',
         gap: 24,
       }}>
@@ -34,16 +35,19 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <a href="mailto:info@zencloud.com.au" style={{
-          background: '#f8fafc',
-          color: 'var(--footer-bg)',
-          borderRadius: 8,
-          padding: '14px 20px',
-          fontFamily: 'var(--font-body)',
-          fontSize: 13,
-          fontWeight: 700,
-          whiteSpace: 'nowrap',
-        }}>info@zencloud.com.au</a>
+        <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+          <a href="mailto:info@zencloud.com.au" style={{
+            background: '#f8fafc',
+            color: 'var(--footer-bg)',
+            borderRadius: 8,
+            padding: '14px 20px',
+            fontFamily: 'var(--font-body)',
+            fontSize: 13,
+            fontWeight: 700,
+            whiteSpace: 'nowrap',
+            display: 'inline-block',
+          }}>info@zencloud.com.au</a>
+        </div>
       </div>
     </section>
   )
