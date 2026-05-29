@@ -48,7 +48,7 @@ This line should appear in ecosystem documents, footer material, and route maps 
 |---|---|
 | ZenCloud Advisory | `https://www.zencloud.com.au/` |
 | StudioSix | `https://studiosix.com.au/` |
-| Velocity Architecture Framework | `https://zencloudau.github.io/velocity-architecture/` |
+| Velocity Architecture Framework | `https://velocityarchitectureframework.com/` |
 | VAF Agentic Architect | `https://velocityarchitectureframework.com/` |
 | Velocity Architecture Academy | `https://velocityarchitecture.com.au/` |
 | VAF-SA | `https://zencloudau.github.io/vaf-sa/` |

@@ -195,7 +195,7 @@ Logo: text "ZenCloud Advisory"
 Nav links — inline flex, gap 28px:
 - Advisory (href="#advisory")
 - Ecosystem (href="#ecosystem")
-- VAF™ ↗ (href="https://zencloudau.github.io/velocity-architecture" target="_blank" rel="noopener noreferrer")
+- VAF™ ↗ (href="https://velocityarchitectureframework.com" target="_blank" rel="noopener noreferrer")
 - StudioSix ↗ (href="https://studiosix.com.au" target="_blank" rel="noopener noreferrer")
 - Contact (href="#contact")
 - Font: var(--font-body) 12px, color var(--text-muted)
