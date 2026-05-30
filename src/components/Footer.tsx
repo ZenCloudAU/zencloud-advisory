@@ -1,6 +1,7 @@
 const links = [
   { label: 'Profile', href: '/profile/' },
   { label: 'Velocity Framework', href: 'https://velocityarchitectureframework.com/' },
+  { label: 'VAF Agentic Architect', href: 'https://velocityarchitectureframework.com/app/portal.html' },
   { label: 'Velocity Academy', href: 'https://velocityarchitecture.com.au/' },
   { label: 'StudioSix', href: 'https://studiosix.com.au/' },
   { label: 'EA Artefact Generator', href: 'https://ea.velocityarchitecture.com.au/' },

@@ -18,7 +18,7 @@ const cells = [
     name: 'Velocity Architecture Framework™',
     body: 'The decision-first architecture method. Velocity provides the shared language, viewpoints, artefacts, and governance model behind the work.',
     linkText: 'velocityarchitectureframework.com ↗',
-    href: 'https://velocityarchitectureframework.com',
+    href: 'https://velocityarchitectureframework.com/',
   },
 ]
 
