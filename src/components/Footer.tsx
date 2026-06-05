@@ -1,9 +1,7 @@
 const externalLinks = [
-  { label: 'Velocity Architecture Framework', href: 'https://velocityarchitectureframework.com' },
-  { label: 'VAF Agent', href: 'https://velocityarchitectureframework.com' },
   { label: 'StudioSix', href: 'https://studiosix.com.au' },
-  { label: 'GitHub', href: 'https://github.com/ZenCloudAU' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/philmyint' },
+  { label: 'Velocity Architecture Framework', href: 'https://velocityarchitectureframework.com' },
+  { label: 'GitHub', href: 'https://github.com/ZenCloudAU/velocity-architecture' },
 ]
 
 export default function Footer() {
