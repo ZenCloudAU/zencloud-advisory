@@ -60,6 +60,17 @@
   --vaf-transition:     200ms ease;
 }
 
+/* Conversion redesign additions */
+:root {
+  --orange:          #e8630a;
+  --orange-dark:     #c45508;
+  --orange-dim:      rgba(232,99,10,0.08);
+  --orange-border:   rgba(232,99,10,0.25);
+  --navy-dim:        rgba(30,58,95,0.55);
+  --navy-muted:      rgba(30,58,95,0.38);
+  --navy-bg:         #1e3a5f;
+}
+
 body {
   font-family: var(--font-body);
   background: var(--bg-page);
