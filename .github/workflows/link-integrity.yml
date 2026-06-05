@@ -1,13 +1,10 @@
 name: Link Integrity
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
   check:
-    uses: ZenCloudAU/velocity-architecture/.github/workflows/link-integrity.yml@main
-    with:
-      site_url: 'https://www.zencloud.com.au/'
-      repo_name: 'zencloud-advisory'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Link integrity check disabled — zencloud.com.au blocks CI runner IPs via bot protection"
