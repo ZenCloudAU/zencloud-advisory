@@ -23,29 +23,16 @@ export default function Nav() {
       padding: '0 3rem', height: 64,
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     }}>
-      {/* Logo */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '.75rem' }}>
-        {/* Orange Z square mark */}
+      {/* Wordmark */}
+      <div>
         <div style={{
-          width: 34, height: 34, background: 'var(--accent-amber)',
-          borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center',
-          flexShrink: 0,
-        }}>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M3 4h14L3 16h14" stroke="white" strokeWidth="2.5"
-              strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </div>
-        <div>
-          <div style={{
-            fontFamily: 'var(--font-body)', fontSize: '.9rem', fontWeight: 700,
-            color: 'var(--text-primary)', letterSpacing: '-.02em', lineHeight: 1.1,
-          }}>ZenCloud™ Advisory</div>
-          <div style={{
-            fontFamily: 'var(--font-mono)', fontSize: '.58rem',
-            color: 'var(--navy-muted)', letterSpacing: '.04em',
-          }}>Enterprise Architecture · Brisbane</div>
-        </div>
+          fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 700,
+          color: 'var(--text-primary)', letterSpacing: '-.02em', lineHeight: 1.1,
+        }}>Zen<span style={{ color: 'var(--accent-amber)' }}>Cloud</span>™ Advisory</div>
+        <div style={{
+          fontFamily: 'var(--font-mono)', fontSize: '.56rem',
+          color: 'var(--navy-muted)', letterSpacing: '.08em', textTransform: 'uppercase',
+        }}>Enterprise Architecture · Brisbane</div>
       </div>
 
       {/* Links + CTA */}
