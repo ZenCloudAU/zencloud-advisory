@@ -1,13 +1,8 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import ClientJourneyBand from './components/ClientJourneyBand'
-import RoleClarity from './components/RoleClarity'
+import CredibilityBand from './components/CredibilityBand'
 import AdvisoryServices from './components/AdvisoryServices'
 import EngagementOffers from './components/EngagementOffers'
-import EcosystemMap from './components/EcosystemMap'
-import VafStrip from './components/VafStrip'
-import ToolsSection from './components/ToolsSection'
-import InsightsSection from './components/InsightsSection'
 import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
@@ -18,14 +13,9 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <ClientJourneyBand />
-        <RoleClarity />
+        <CredibilityBand />
         <AdvisoryServices />
         <EngagementOffers />
-        <EcosystemMap />
-        <VafStrip />
-        <ToolsSection />
-        <InsightsSection />
         <AboutSection />
         <ContactSection />
       </main>
