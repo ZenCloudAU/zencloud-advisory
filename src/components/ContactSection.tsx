@@ -1,62 +1,51 @@
+function bookConversation() {
+  window.location.href = 'mailto:phil@zencloud.com.au?subject=Book%20a%20Conversation'
+}
+
 export default function ContactSection() {
   return (
     <section id="contact" style={{
-      background: 'var(--bg-surface)',
-      borderBottom: '1px solid var(--border)',
-      padding: '52px 36px',
-      scrollMarginTop: 84,
+      padding: '7rem 3rem', borderTop: '1px solid var(--border)',
+      background: 'var(--navy-bg)', textAlign: 'center', position: 'relative', overflow: 'hidden',
     }}>
-      <div className="container" style={{
-        background: 'var(--footer-bg)',
-        borderRadius: 10,
-        padding: '34px 36px',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-        alignItems: 'center',
-        gap: 24,
-      }}>
-        <div>
-          <p style={{
-            fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
-            letterSpacing: '2.5px', textTransform: 'uppercase',
-            color: 'var(--accent-gold)', marginBottom: 8,
-          }}>CONTACT</p>
+      {/* Orange radial glow */}
+      <div style={{
+        position: 'absolute', top: '-20%', left: '50%', transform: 'translateX(-50%)',
+        width: '80%', height: '130%',
+        background: 'radial-gradient(ellipse, rgba(232,99,10,0.12) 0%, transparent 60%)',
+        pointerEvents: 'none',
+      }} />
 
-          <h2 style={{
-            fontFamily: 'var(--font-display)', fontSize: 28, fontWeight: 700,
-            letterSpacing: '-0.5px', color: '#f8fafc', marginBottom: 8,
-          }}>Start with the architecture decision.</h2>
-
-          <p style={{
-            fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-            color: '#cbd5e1', maxWidth: 650, lineHeight: 1.7,
-          }}>
-            Use ZenCloud when a cloud, AI, cyber, platform, vendor, or delivery decision needs plain-language framing,
-            executive visibility, and a practical action plan. The first step is an Architecture Decision Health Check.
-          </p>
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 10 }}>
-          <a href="mailto:info@zencloud.com.au?subject=Architecture%20Decision%20Health%20Check" style={{
-            background: '#f8fafc',
-            color: 'var(--footer-bg)',
-            borderRadius: 8,
-            padding: '14px 20px',
-            fontFamily: 'var(--font-body)',
-            fontSize: 13,
-            fontWeight: 700,
-            whiteSpace: 'nowrap',
-            display: 'inline-block',
-            textDecoration: 'none',
-          }}>Book Health Check</a>
-          <a href="mailto:info@zencloud.com.au" style={{
-            color: '#cbd5e1',
-            fontFamily: 'var(--font-body)',
-            fontSize: 12,
-            fontWeight: 300,
-            textDecoration: 'none',
-          }}>info@zencloud.com.au</a>
-        </div>
+      <div style={{ position: 'relative', zIndex: 1, maxWidth: 560, margin: '0 auto' }}>
+        <p style={{
+          fontFamily: 'var(--font-mono)', fontSize: '.6rem',
+          letterSpacing: '.22em', textTransform: 'uppercase',
+          color: 'rgba(232,99,10,0.8)', marginBottom: '.85rem',
+        }}>Let's talk</p>
+        <h2 style={{
+          fontFamily: 'var(--font-display)',
+          fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)',
+          fontWeight: 700, lineHeight: 1.15, color: '#ffffff', marginBottom: '1rem',
+        }}>
+          Curious where your<br />architecture{' '}
+          <em style={{ color: 'var(--accent-amber)', fontStyle: 'italic' }}>actually stands?</em>
+        </h2>
+        <p style={{
+          fontSize: '.92rem', fontWeight: 300, lineHeight: 1.7,
+          color: 'rgba(255,255,255,0.5)', marginBottom: '2.25rem',
+        }}>
+          Book a 15-minute conversation. We'll tell you what we see — and whether we're the right fit. No proposal. No obligation.
+        </p>
+        <button onClick={bookConversation} style={{
+          fontFamily: 'var(--font-mono)', fontSize: '.72rem',
+          letterSpacing: '.1em', textTransform: 'uppercase',
+          background: 'var(--accent-amber)', color: '#fff',
+          padding: '1rem 2.25rem', borderRadius: 4, border: 'none', cursor: 'pointer',
+        }}>Book a Conversation →</button>
+        <p style={{
+          marginTop: '.85rem', fontFamily: 'var(--font-mono)',
+          fontSize: '.6rem', letterSpacing: '.08em', color: 'rgba(255,255,255,0.3)',
+        }}>phil@zencloud.com.au · Brisbane, Australia</p>
       </div>
     </section>
   )
