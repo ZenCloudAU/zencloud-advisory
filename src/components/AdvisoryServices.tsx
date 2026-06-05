@@ -1,4 +1,6 @@
-const cards = [
+import React from 'react'
+
+const services = [
   {
     num: '01 — ENTERPRISE',
     title: 'Enterprise Architecture Advisory',
@@ -31,89 +33,67 @@ const cards = [
   },
 ]
 
-const partners = ['Microsoft', 'Amazon Web Services', 'Google Cloud']
+function Card({ num, title, body }: typeof services[0]) {
+  const [hovered, setHovered] = React.useState(false)
+  return (
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        background: '#ffffff', padding: '2rem 1.75rem',
+        position: 'relative',
+        boxShadow: hovered ? 'var(--shadow-hover)' : 'none',
+        zIndex: hovered ? 1 : 'auto',
+        transition: 'box-shadow 200ms',
+      }}
+    >
+      <div style={{
+        position: 'absolute', top: 0, left: 0, right: 0, height: 3,
+        background: hovered ? 'var(--accent-amber)' : 'transparent',
+        transition: 'background 200ms',
+      }} />
+      <p style={{
+        fontFamily: 'var(--font-mono)', fontSize: '.58rem',
+        letterSpacing: '.12em', color: 'var(--accent-amber)', marginBottom: '.85rem',
+      }}>{num}</p>
+      <p style={{
+        fontFamily: 'var(--font-body)', fontSize: '.88rem',
+        fontWeight: 600, color: 'var(--text-primary)', marginBottom: '.6rem', lineHeight: 1.3,
+      }}>{title}</p>
+      <p style={{
+        fontSize: '.78rem', fontWeight: 300, lineHeight: 1.65, color: 'var(--navy-dim)',
+      }}>{body}</p>
+    </div>
+  )
+}
 
 export default function AdvisoryServices() {
   return (
     <section id="services" style={{
-      background: 'var(--bg-alt)',
-      borderBottom: '1px solid var(--border)',
-      padding: '52px 36px',
+      background: 'var(--bg-alt)', borderTop: '1px solid var(--border)',
     }}>
-      <div className="container">
+      <div className="container" style={{ padding: '5.5rem 3rem' }}>
         <p style={{
-          fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
-          letterSpacing: '2.5px', textTransform: 'uppercase',
-          color: 'var(--text-ghost)', marginBottom: 8,
-        }}>ADVISORY SERVICES</p>
-
+          fontFamily: 'var(--font-mono)', fontSize: '.6rem',
+          letterSpacing: '.22em', textTransform: 'uppercase',
+          color: 'var(--accent-amber)', marginBottom: '.85rem',
+        }}>What we provide</p>
         <h2 style={{
-          fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 700,
-          letterSpacing: '-0.5px', color: 'var(--text-primary)', marginBottom: 8,
-        }}>What ZenCloud provides</h2>
-
+          fontFamily: 'var(--font-display)', fontSize: 'clamp(1.6rem, 2.8vw, 2.3rem)',
+          fontWeight: 700, lineHeight: 1.2, color: 'var(--text-primary)', marginBottom: '.75rem',
+        }}>Six advisory disciplines. One firm.</h2>
         <p style={{
-          fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
-          color: 'var(--text-muted)', maxWidth: 620, marginBottom: 18,
-        }}>Senior advisory for organisations that need architecture decisions to become governed execution, not more disconnected artefacts.</p>
+          fontSize: '.92rem', fontWeight: 300, lineHeight: 1.7,
+          color: 'var(--navy-dim)', maxWidth: 520, marginBottom: '2.5rem',
+        }}>Senior advisory for organisations that need architecture decisions to become governed execution — not more disconnected artefacts.</p>
 
+        {/* 3×2 border-grid */}
         <div style={{
-          display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 10,
-          background: 'var(--bg-surface)', border: '1px solid var(--border)',
-          borderRadius: 8, padding: '14px 16px', marginBottom: 36,
+          display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: 1, background: 'var(--border)',
+          border: '1px solid var(--border)', borderRadius: 6, overflow: 'hidden',
         }}>
-          <span style={{
-            fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
-            letterSpacing: '1.6px', textTransform: 'uppercase', color: 'var(--text-ghost)',
-          }}>Cloud partner ecosystem</span>
-          {partners.map(partner => (
-            <span key={partner} style={{
-              fontFamily: 'var(--font-body)', fontSize: 12, fontWeight: 600,
-              color: 'var(--text-primary)', background: 'var(--bg-alt)',
-              border: '1px solid var(--border)', borderRadius: 999,
-              padding: '6px 10px',
-            }}>{partner}</span>
-          ))}
-          <span style={{
-            fontFamily: 'var(--font-body)', fontSize: 12, fontWeight: 300,
-            color: 'var(--text-muted)', lineHeight: 1.6,
-          }}>ZenCloud is a technical partner across Microsoft, AWS, and Google Cloud platform ecosystems.</span>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 16 }}>
-          {cards.map(card => (
-            <div key={card.num}
-              style={{
-                background: 'var(--bg-surface)', padding: '24px 26px',
-                borderRadius: 8,
-                borderLeft: '3px solid var(--accent-amber)',
-                border: '1px solid var(--border)',
-                borderLeftWidth: 3, borderLeftColor: 'var(--accent-amber)',
-                boxShadow: 'var(--shadow-sm)',
-                transition: 'box-shadow 150ms, background-color 150ms',
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.background = 'var(--bg-page)'
-                e.currentTarget.style.boxShadow = 'var(--shadow-hover)'
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.background = 'var(--bg-surface)'
-                e.currentTarget.style.boxShadow = 'var(--shadow-sm)'
-              }}>
-              <p style={{
-                fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
-                letterSpacing: '1px', color: 'var(--accent-amber)', marginBottom: 10,
-              }}>{card.num}</p>
-              <p style={{
-                fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 500,
-                color: 'var(--text-primary)', marginBottom: 8,
-              }}>{card.title}</p>
-              <p style={{
-                fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 300,
-                color: 'var(--text-muted)', lineHeight: 1.7,
-              }}>{card.body}</p>
-            </div>
-          ))}
+          {services.map(s => <Card key={s.num} {...s} />)}
         </div>
       </div>
     </section>
