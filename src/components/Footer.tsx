@@ -18,7 +18,7 @@ export default function Footer() {
         fontFamily: 'var(--font-body)', fontSize: '.82rem',
         fontWeight: 700, color: 'rgba(255,255,255,0.45)',
       }}>
-        Zen<span style={{ color: 'var(--accent-amber)' }}>Cloud</span> Advisory
+        Zen<span style={{ color: 'var(--accent-amber)' }}>Cloud</span>™ Advisory
       </div>
 
       {/* Links */}

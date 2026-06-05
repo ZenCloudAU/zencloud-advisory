@@ -8,7 +8,7 @@ const LINKS = [
 function scrollTo(id: string) {
   const el = document.getElementById(id)
   if (!el) return
-  const y = el.getBoundingClientRect().top + window.scrollY - 62
+  const y = el.getBoundingClientRect().top + window.scrollY - 64
   window.scrollTo({ top: y, behavior: 'smooth' })
   window.history.replaceState(null, '', `#${id}`)
 }
@@ -20,7 +20,7 @@ export default function Nav() {
       background: 'rgba(255,255,255,0.97)',
       borderBottom: '1px solid var(--border)',
       backdropFilter: 'blur(12px)',
-      padding: '0 3rem', height: 62,
+      padding: '0 3rem', height: 64,
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     }}>
       {/* Logo */}
@@ -40,7 +40,7 @@ export default function Nav() {
           <div style={{
             fontFamily: 'var(--font-body)', fontSize: '.9rem', fontWeight: 700,
             color: 'var(--text-primary)', letterSpacing: '-.02em', lineHeight: 1.1,
-          }}>ZenCloud Advisory</div>
+          }}>ZenCloud™ Advisory</div>
           <div style={{
             fontFamily: 'var(--font-mono)', fontSize: '.58rem',
             color: 'var(--navy-muted)', letterSpacing: '.04em',
