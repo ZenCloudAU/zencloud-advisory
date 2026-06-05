@@ -1,82 +1,69 @@
-const internalLinks = [
-  { label: 'Home', id: 'top' },
-  { label: 'Advisory', id: 'advisory' },
+const LINKS = [
   { label: 'Services', id: 'services' },
-  { label: 'Offers', id: 'offers' },
-  { label: 'Velocity', id: 'ecosystem' },
-  { label: 'Tools', id: 'tools' },
-  { label: 'Insights', id: 'insights' },
-  { label: 'About', id: 'about' },
-  { label: 'Contact', id: 'contact' },
+  { label: 'Offers',   id: 'offers'   },
+  { label: 'About',    id: 'about'    },
+  { label: 'Contact',  id: 'contact'  },
 ]
 
-function scrollToSection(id: string) {
+function scrollTo(id: string) {
   const el = document.getElementById(id)
-
-  if (!el) {
-    window.location.hash = id
-    return
-  }
-
-  const navOffset = 92
-  const top = Math.max(0, el.getBoundingClientRect().top + window.scrollY - navOffset)
-
-  window.scrollTo({ top, behavior: 'auto' })
-  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${id}`)
+  if (!el) return
+  const y = el.getBoundingClientRect().top + window.scrollY - 62
+  window.scrollTo({ top: y, behavior: 'smooth' })
+  window.history.replaceState(null, '', `#${id}`)
 }
 
 export default function Nav() {
   return (
     <nav style={{
       position: 'sticky', top: 0, zIndex: 100,
-      minHeight: 56,
-      background: 'rgba(255,255,255,0.88)',
-      backdropFilter: 'blur(18px)',
-      WebkitBackdropFilter: 'blur(18px)',
+      background: 'rgba(255,255,255,0.97)',
       borderBottom: '1px solid var(--border)',
-      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-      gap: 20,
-      padding: '10px 36px',
-      flexWrap: 'wrap',
+      backdropFilter: 'blur(12px)',
+      padding: '0 3rem', height: 62,
+      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     }}>
-      <button type="button" onClick={() => scrollToSection('top')} style={{
-        fontFamily: 'var(--font-body)', fontSize: 17, fontWeight: 700,
-        letterSpacing: '-0.3px', background: 'transparent', border: 0, cursor: 'pointer', padding: 0,
-      }}>
-        <span style={{ color: 'var(--text-primary)' }}>Zen</span>
-        <span style={{ color: 'var(--accent-amber)' }}>Cloud</span>
-        <span style={{ color: 'var(--text-primary)' }}> Advisory</span>
-      </button>
-
-      <div style={{ display: 'inline-flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' }}>
-        {internalLinks.map(({ label, id }) => (
-          <button key={label} type="button"
-            onClick={() => scrollToSection(id)}
-            style={{
-              fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)',
-              transition: 'color 150ms', background: 'transparent', border: 0, cursor: 'pointer', padding: 0,
-            }}
-            onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
-            onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-muted)')}>
-            {label}
-          </button>
-        ))}
-        <a href="/profile/" style={{
-          fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--text-muted)',
-          textDecoration: 'none',
-        }}>Profile</a>
+      {/* Logo */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '.75rem' }}>
+        {/* Orange Z square mark */}
+        <div style={{
+          width: 34, height: 34, background: 'var(--accent-amber)',
+          borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center',
+          flexShrink: 0,
+        }}>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 4h14L3 16h14" stroke="white" strokeWidth="2.5"
+              strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <div style={{
+            fontFamily: 'var(--font-body)', fontSize: '.9rem', fontWeight: 700,
+            color: 'var(--text-primary)', letterSpacing: '-.02em', lineHeight: 1.1,
+          }}>ZenCloud Advisory</div>
+          <div style={{
+            fontFamily: 'var(--font-mono)', fontSize: '.58rem',
+            color: 'var(--navy-muted)', letterSpacing: '.04em',
+          }}>Enterprise Architecture · Brisbane</div>
+        </div>
       </div>
 
-      <button
-        onClick={() => { window.location.href = 'mailto:info@zencloud.com.au?subject=Architecture%20Decision%20Health%20Check' }}
-        style={{
-          background: 'var(--footer-bg)', color: '#f8fafc',
-          fontSize: 13, fontWeight: 500,
-          padding: '0 18px', minHeight: 44,
-          borderRadius: 8, border: 'none',
-        }}>
-        Book Health Check
-      </button>
+      {/* Links + CTA */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+        {LINKS.map(({ label, id }) => (
+          <button key={id} onClick={() => scrollTo(id)} style={{
+            background: 'none', border: 'none', padding: 0,
+            fontFamily: 'var(--font-body)', fontSize: '.75rem',
+            color: 'var(--navy-dim)', cursor: 'pointer',
+          }}>{label}</button>
+        ))}
+        <button onClick={() => scrollTo('contact')} style={{
+          fontFamily: 'var(--font-mono)', fontSize: '.65rem',
+          letterSpacing: '.08em', textTransform: 'uppercase',
+          background: 'var(--accent-amber)', color: '#fff',
+          padding: '.5rem 1.1rem', borderRadius: 4, border: 'none', cursor: 'pointer',
+        }}>Book Health Check</button>
+      </div>
     </nav>
   )
 }
