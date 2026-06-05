@@ -1,6 +1,6 @@
 const externalLinks = [
   { label: 'StudioSix', href: 'https://studiosix.com.au' },
-  { label: 'Velocity Architecture Framework', href: 'https://velocityarchitectureframework.com' },
+  { label: 'Velocity', href: 'https://velocityarchitectureframework.com' },
   { label: 'GitHub', href: 'https://github.com/ZenCloudAU/velocity-architecture' },
 ]
 
