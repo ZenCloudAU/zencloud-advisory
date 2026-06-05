@@ -65,6 +65,18 @@ export default function Hero() {
           marginTop: '.75rem', fontFamily: 'var(--font-mono)',
           fontSize: '.6rem', letterSpacing: '.08em', color: 'var(--navy-muted)',
         }}>15 min · no obligation · we assess where your architecture stands</p>
+
+        {/* StudioSix relationship link */}
+        <p style={{
+          marginTop: '2rem', fontFamily: 'var(--font-mono)', fontSize: '.62rem',
+          letterSpacing: '.06em', color: 'var(--navy-muted)',
+        }}>
+          Delivered by our AI engine{' '}
+          <a href="https://studiosix.com.au" target="_blank" rel="noopener noreferrer"
+            style={{ color: 'var(--accent-amber)', textDecoration: 'none', fontWeight: 600 }}>
+            StudioSix ↗
+          </a>
+        </p>
       </div>
     </section>
   )
