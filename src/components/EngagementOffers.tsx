@@ -82,7 +82,7 @@ export default function EngagementOffers() {
             padding: '.2rem .75rem', borderRadius: '0 0 4px 4px', whiteSpace: 'nowrap',
           }}>Recommended starting point</div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 220px', gap: '2rem', marginTop: '.75rem' }}>
+          <div className="zc-offer-featured-grid">
             <div>
               <p style={{
                 fontFamily: 'var(--font-mono)', fontSize: '.58rem',
@@ -130,7 +130,7 @@ export default function EngagementOffers() {
         </div>
 
         {/* Secondary 2×2 grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
+        <div className="zc-offers-secondary">
           {secondary.map(o => (
             <div key={o.num} style={{
               background: 'var(--bg-alt)', border: '1px solid var(--border)',

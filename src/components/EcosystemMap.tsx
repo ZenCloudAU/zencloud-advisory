@@ -89,7 +89,7 @@ export default function EcosystemMap() {
           color: 'var(--text-muted)', maxWidth: 480, marginBottom: 36,
         }}>Eight connected nodes. One advisory parent. Clients enter through ZenCloud and route to the right layer.</p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+        <div className="zc-ecosystem-grid">
           {nodes.map(node => (
             <div key={node.name}
               style={{

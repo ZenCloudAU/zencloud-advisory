@@ -25,10 +25,7 @@ export default function AboutSection() {
     <section id="about" style={{
       borderTop: '1px solid var(--border)', background: 'var(--bg-alt)',
     }}>
-      <div className="container" style={{
-        padding: '5.5rem 3rem',
-        display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start',
-      }}>
+      <div className="container zc-about-inner" style={{ padding: '5.5rem 3rem' }}>
         {/* Bio */}
         <div>
           <p style={{

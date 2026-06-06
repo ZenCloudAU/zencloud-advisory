@@ -88,11 +88,7 @@ export default function AdvisoryServices() {
         }}>Senior advisory for organisations that need architecture decisions to become governed execution — not more disconnected artefacts.</p>
 
         {/* 3×2 border-grid */}
-        <div style={{
-          display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: 1, background: 'var(--border)',
-          border: '1px solid var(--border)', borderRadius: 6, overflow: 'hidden',
-        }}>
+        <div className="zc-services-grid">
           {services.map(s => <Card key={s.num} {...s} />)}
         </div>
       </div>

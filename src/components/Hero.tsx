@@ -28,10 +28,7 @@ export default function Hero() {
         pointerEvents: 'none',
       }} />
 
-      <div style={{
-        maxWidth: 1180, margin: '0 auto', position: 'relative', zIndex: 1,
-        display: 'grid', gridTemplateColumns: '1fr 380px', gap: '4rem', alignItems: 'center',
-      }}>
+      <div className="zc-hero-grid" style={{ position: 'relative', zIndex: 1 }}>
 
         {/* Left — copy */}
         <div>

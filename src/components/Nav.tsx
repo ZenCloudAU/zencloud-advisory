@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const LINKS = [
   { label: 'Services', id: 'services' },
   { label: 'Offers',   id: 'offers'   },
@@ -14,13 +16,15 @@ function scrollTo(id: string) {
 }
 
 export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
-    <nav style={{
+    <nav className="zc-nav" style={{
       position: 'sticky', top: 0, zIndex: 100,
       background: 'rgba(255,255,255,0.97)',
       borderBottom: '1px solid var(--border)',
       backdropFilter: 'blur(12px)',
-      padding: '0 3rem', height: 64,
+      height: 64,
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     }}>
       {/* Wordmark */}
@@ -35,8 +39,21 @@ export default function Nav() {
         }}>Enterprise Architecture · Brisbane</div>
       </div>
 
+      {/* Hamburger — visible on mobile only */}
+      <button
+        className="zc-nav-toggle"
+        onClick={() => setMenuOpen(o => !o)}
+        aria-label="Toggle navigation"
+        aria-expanded={menuOpen}
+      >
+        {menuOpen ? '✕' : '☰'}
+      </button>
+
       {/* Links + CTA */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+      <div
+        className={`zc-nav-links${menuOpen ? ' open' : ''}`}
+        onClick={() => setMenuOpen(false)}
+      >
         {LINKS.map(({ label, id }) => (
           <button key={id} onClick={() => scrollTo(id)} style={{
             background: 'none', border: 'none', padding: 0,

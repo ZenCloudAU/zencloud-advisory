@@ -88,3 +88,154 @@ ul { list-style: none; }
   max-width: 1180px;
   margin: 0 auto;
 }
+
+/* ═══════════════════════════════════════
+   COMPONENT CLASSES
+   ═══════════════════════════════════════ */
+
+.zc-nav {
+  padding: 0 3rem;
+}
+
+.zc-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.zc-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.zc-hero-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 4rem;
+  align-items: center;
+}
+
+.zc-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.zc-offer-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 2rem;
+  margin-top: .75rem;
+}
+
+.zc-offers-secondary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.zc-about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.zc-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+   ═══════════════════════════════════════ */
+
+/* Tablet ≤ 960px */
+@media (max-width: 960px) {
+  .zc-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .zc-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zc-ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zc-about-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Mobile ≤ 768px */
+@media (max-width: 768px) {
+  .zc-nav {
+    padding: 0 1.5rem;
+  }
+
+  .zc-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .zc-nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 12px 1.5rem 16px;
+    z-index: 99;
+  }
+
+  .zc-nav-links.open {
+    display: flex;
+  }
+
+  .zc-nav-links button {
+    text-align: left;
+    padding: .55rem .5rem;
+  }
+
+  .zc-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .zc-offer-featured-grid {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .zc-offers-secondary {
+    grid-template-columns: 1fr;
+  }
+
+  .zc-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+}
