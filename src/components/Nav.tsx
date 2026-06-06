@@ -55,18 +55,13 @@ export default function Nav() {
         onClick={() => setMenuOpen(false)}
       >
         {LINKS.map(({ label, id }) => (
-          <button key={id} onClick={() => scrollTo(id)} style={{
-            background: 'none', border: 'none', padding: 0,
-            fontFamily: 'var(--font-body)', fontSize: '.75rem',
-            color: 'var(--navy-dim)', cursor: 'pointer',
-          }}>{label}</button>
+          <button key={id} onClick={() => scrollTo(id)} className="zc-nav-link-btn">
+            {label}
+          </button>
         ))}
-        <button onClick={() => scrollTo('contact')} style={{
-          fontFamily: 'var(--font-mono)', fontSize: '.65rem',
-          letterSpacing: '.08em', textTransform: 'uppercase',
-          background: 'var(--accent-amber)', color: '#fff',
-          padding: '.5rem 1.1rem', borderRadius: 4, border: 'none', cursor: 'pointer',
-        }}>Book Health Check</button>
+        <button onClick={() => scrollTo('contact')} className="zc-nav-cta">
+          Book Health Check
+        </button>
       </div>
     </nav>
   )

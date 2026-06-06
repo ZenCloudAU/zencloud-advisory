@@ -36,12 +36,7 @@ export default function ContactSection() {
         }}>
           Book a 15-minute conversation. We'll tell you what we see — and whether we're the right fit. No proposal. No obligation.
         </p>
-        <button onClick={bookConversation} style={{
-          fontFamily: 'var(--font-mono)', fontSize: '.72rem',
-          letterSpacing: '.1em', textTransform: 'uppercase',
-          background: 'var(--accent-amber)', color: '#fff',
-          padding: '1rem 2.25rem', borderRadius: 4, border: 'none', cursor: 'pointer',
-        }}>Book a Conversation →</button>
+        <button onClick={bookConversation} className="zc-btn-primary" style={{ padding: '1rem 2.25rem' }}>Book a Conversation →</button>
         <p style={{
           marginTop: '.85rem', fontFamily: 'var(--font-mono)',
           fontSize: '.6rem', letterSpacing: '.08em', color: 'rgba(255,255,255,0.3)',

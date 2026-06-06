@@ -60,12 +60,7 @@ export default function Hero() {
             Not disconnected artefacts.
           </p>
 
-          <button onClick={bookConversation} style={{
-            fontFamily: 'var(--font-mono)', fontSize: '.68rem',
-            letterSpacing: '.1em', textTransform: 'uppercase',
-            background: 'var(--accent-amber)', color: '#fff',
-            padding: '1rem 2rem', borderRadius: 4, border: 'none', cursor: 'pointer',
-          }}>Book a Conversation →</button>
+          <button onClick={bookConversation} className="zc-btn-primary">Book a Conversation →</button>
 
           <p style={{
             marginTop: '.75rem', fontFamily: 'var(--font-mono)',
@@ -78,9 +73,7 @@ export default function Hero() {
           }}>
             Delivered by our AI engine{' '}
             <a href="https://studiosix.com.au" target="_blank" rel="noopener noreferrer"
-              style={{ color: 'var(--accent-amber)', textDecoration: 'none', fontWeight: 600 }}>
-              StudioSix ↗
-            </a>
+              className="zc-link-accent">StudioSix ↗</a>
           </p>
         </div>
 

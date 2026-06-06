@@ -25,11 +25,7 @@ export default function Footer() {
       <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
         {externalLinks.map(l => (
           <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer"
-            style={{
-              fontFamily: 'var(--font-mono)', fontSize: '.6rem',
-              letterSpacing: '.1em', color: 'rgba(255,255,255,0.28)',
-              textDecoration: 'none',
-            }}>{l.label}</a>
+            className="zc-footer-link">{l.label}</a>
         ))}
       </div>
 

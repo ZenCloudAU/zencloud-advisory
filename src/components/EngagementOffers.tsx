@@ -118,13 +118,8 @@ export default function EngagementOffers() {
               </div>
               <button
                 onClick={() => bookConversation('Architecture Decision Health Check')}
-                style={{
-                  display: 'block', width: '100%',
-                  fontFamily: 'var(--font-mono)', fontSize: '.65rem',
-                  letterSpacing: '.1em', textTransform: 'uppercase',
-                  color: '#fff', background: 'var(--accent-amber)',
-                  border: 'none', padding: '.75rem 1.25rem', borderRadius: 4, cursor: 'pointer',
-                }}>Start here →</button>
+                className="zc-btn-primary"
+                style={{ display: 'block', width: '100%', padding: '.75rem 1.25rem' }}>Start here →</button>
             </div>
           </div>
         </div>
@@ -154,15 +149,8 @@ export default function EngagementOffers() {
               }}>{o.body}</p>
               <button
                 onClick={() => bookConversation(o.title)}
-                style={{
-                  display: 'block', width: '100%',
-                  fontFamily: 'var(--font-mono)', fontSize: '.62rem',
-                  letterSpacing: '.1em', textTransform: 'uppercase',
-                  color: 'var(--accent-amber)',
-                  border: '1px solid var(--orange-border)',
-                  padding: '.55rem 1rem', borderRadius: 4,
-                  background: 'var(--orange-dim)', cursor: 'pointer',
-                }}>Start with a conversation →</button>
+                className="zc-btn-secondary"
+                style={{ display: 'block', width: '100%' }}>Start with a conversation →</button>
             </div>
           ))}
         </div>
