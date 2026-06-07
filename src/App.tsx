@@ -1,6 +1,7 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import CredibilityBand from './components/CredibilityBand'
+import AiDeliverySection from './components/AiDeliverySection'
 import AdvisoryServices from './components/AdvisoryServices'
 import EngagementOffers from './components/EngagementOffers'
 import AboutSection from './components/AboutSection'
@@ -14,6 +15,7 @@ export default function App() {
       <main>
         <Hero />
         <CredibilityBand />
+        <AiDeliverySection />
         <AdvisoryServices />
         <EngagementOffers />
         <AboutSection />
