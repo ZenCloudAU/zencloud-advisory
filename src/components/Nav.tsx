@@ -1,10 +1,10 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 
 const LINKS = [
-  { label: 'Services', id: 'services' },
-  { label: 'Offers',   id: 'offers'   },
-  { label: 'About',    id: 'about'    },
-  { label: 'Contact',  id: 'contact'  },
+  { label: 'Advisory',    id: 'services' },
+  { label: 'Engagements', id: 'offers'   },
+  { label: 'About',       id: 'about'    },
+  { label: 'Contact',     id: 'contact'  },
 ]
 
 function scrollTo(id: string) {
@@ -21,25 +21,24 @@ export default function Nav() {
   return (
     <nav className="zc-nav" style={{
       position: 'sticky', top: 0, zIndex: 100,
-      background: 'rgba(255,255,255,0.97)',
+      background: '#ffffff',
       borderBottom: '1px solid var(--border)',
-      backdropFilter: 'blur(12px)',
       height: 64,
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     }}>
       {/* Wordmark */}
       <div>
         <div style={{
-          fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 700,
+          fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 400,
           color: 'var(--text-primary)', letterSpacing: '-.02em', lineHeight: 1.1,
-        }}>Zen<span style={{ color: 'var(--accent-amber)' }}>Cloud</span>™ Advisory</div>
+        }}>Zen<span style={{ color: 'var(--accent-amber)', fontStyle: 'italic' }}>Cloud</span> Advisory</div>
         <div style={{
           fontFamily: 'var(--font-mono)', fontSize: '.56rem',
-          color: 'var(--navy-muted)', letterSpacing: '.08em', textTransform: 'uppercase',
-        }}>Enterprise Architecture · Brisbane</div>
+          color: 'var(--text-ghost)', letterSpacing: '.08em', textTransform: 'uppercase',
+        }}>Principal Architecture · Brisbane</div>
       </div>
 
-      {/* Hamburger — visible on mobile only */}
+      {/* Hamburger — mobile only */}
       <button
         className="zc-nav-toggle"
         onClick={() => setMenuOpen(o => !o)}
@@ -59,8 +58,11 @@ export default function Nav() {
             {label}
           </button>
         ))}
-        <button onClick={() => scrollTo('contact')} className="zc-nav-cta">
-          Book Health Check
+        <button
+          onClick={() => { window.location.href = 'mailto:info@zencloud.com.au' }}
+          className="zc-nav-cta"
+        >
+          Engage
         </button>
       </div>
     </nav>

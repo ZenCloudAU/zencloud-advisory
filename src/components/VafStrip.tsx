@@ -19,7 +19,7 @@ export default function VafStrip() {
           fontFamily: 'var(--font-mono)', fontSize: 10, fontWeight: 300,
           letterSpacing: '2.5px', textTransform: 'uppercase',
           color: 'var(--accent-amber)', marginBottom: 8,
-        }}>VAF™ · OPEN SOURCE</p>
+        }}>VELOCITY™ · OPEN SOURCE</p>
 
         <h2 style={{
           fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 700,
@@ -29,14 +29,13 @@ export default function VafStrip() {
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
           color: 'var(--text-muted)', maxWidth: 480, marginBottom: 32,
-        }}>Free to use. Aligned to ISO/IEC/IEEE 42010:2022. Powers ZenCloud Advisory and StudioSix delivery.</p>
+        }}>Free to use. Aligned to ISO/IEC/IEEE 42010:2022. The decision-first EA framework powering ZenCloud Advisory and StudioSix delivery.</p>
 
         <div style={{ display: 'flex', gap: 12 }}>
           {cells.map(cell => (
             <div key={cell.tag} style={{
               background: 'var(--bg-page)', flex: 1, padding: '16px 18px',
-              borderRadius: 8, border: '1px solid var(--border)',
-              boxShadow: 'var(--shadow-sm)',
+              borderRadius: 4, border: '1px solid var(--border)',
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <span style={{

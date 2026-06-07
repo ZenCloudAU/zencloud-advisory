@@ -25,7 +25,7 @@
   },
   {
     role: 'AI TOOLING',
-    name: 'VAF Agentic Architect',
+    name: 'Velocity Agentic Architect',
     desc: 'AI agent generating board-ready architecture packs across all six viewpoints. Brief in, governed artefacts out.',
     link: 'https://velocityarchitectureframework.com/app/portal.html',
     linkText: 'velocityarchitectureframework.com ↗',
@@ -33,7 +33,7 @@
   },
   {
     role: 'PRACTITIONER METHOD',
-    name: 'VAF·SA',
+    name: 'Velocity SA',
     desc: 'Solution architecture practitioner framework. Six modules, two pillars, decision-first scoping through delivery.',
     link: 'https://zencloudau.github.io/vaf-sa/',
     linkText: 'zencloudau.github.io/vaf-sa ↗',
