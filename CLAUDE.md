@@ -104,15 +104,15 @@ Create src/App.css with this content and nothing else:
   --text-ghost:        #94a3b8;
   --text-footer:       #334155;
 
-  --accent-amber:      #b45309;
-  --accent-amber-dark: #92400e;
-  --accent-amber-body: #78350f;
+  --accent-amber:      #E8630A;
+  --accent-amber-dark: #CC5508;
+  --accent-amber-body: #a33300;
   --accent-gold:       #fbbf24;
   --accent-blue:       #1e40af;
 
   --border:            #e2e8f0;
   --border-amber:      #fde68a;
-  --border-anchor:     #b45309;
+  --border-anchor:     #E8630A;
 
   --footer-bg:         #0f172a;
 
@@ -577,7 +577,7 @@ Fonts: Playfair Display (display/headings) + DM Sans (body) + DM Mono (labels/ta
 Colours: only values from these tokens — no off-palette hex values:
   #f8fafc  #ffffff  #fffbeb  #fef3c7  #dbeafe
   #0f172a  #475569  #64748b  #94a3b8  #334155
-  #b45309  #92400e  #78350f  #fbbf24  #1e40af
+  #E8630A  #CC5508  #a33300  #fbbf24  #1e40af
   #e2e8f0  #fde68a  #0f172a
 
 No: box-shadow, drop-shadow, text-shadow, filter, backdrop-filter
