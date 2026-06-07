@@ -1,4 +1,4 @@
-const partners = [
+﻿const partners = [
   {
     name: 'Microsoft',
     badge: 'Microsoft Partner Network',
@@ -72,10 +72,10 @@ export default function CredibilityBand() {
                   <div style={{
                     fontFamily: 'var(--font-mono)', fontSize: '.55rem',
                     letterSpacing: '.1em', textTransform: 'uppercase',
-                    color: 'rgba(232,99,10,0.9)',
-                    border: '1px solid rgba(232,99,10,0.3)',
+                    color: 'rgba(0,180,216,0.9)',
+                    border: '1px solid rgba(0,180,216,0.3)',
                     padding: '.12rem .45rem', borderRadius: 2,
-                    background: 'rgba(232,99,10,0.08)', display: 'inline-block',
+                    background: 'rgba(0,180,216,0.08)', display: 'inline-block',
                     marginTop: '.15rem',
                   }}>{p.badge}</div>
                 </div>

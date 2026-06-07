@@ -1,4 +1,4 @@
-function bookConversation() {
+﻿function bookConversation() {
   window.location.href = 'mailto:phil@zencloud.com.au?subject=Book%20a%20Conversation'
 }
 
@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Diagonal texture */}
       <div style={{
         position: 'absolute', top: 0, left: 0, bottom: 0, width: '60%',
-        backgroundImage: 'repeating-linear-gradient(-45deg, rgba(232,99,10,0.025) 0px, rgba(232,99,10,0.025) 1px, transparent 1px, transparent 28px)',
+        backgroundImage: 'repeating-linear-gradient(-45deg, rgba(0,180,216,0.025) 0px, rgba(0,180,216,0.025) 1px, transparent 1px, transparent 28px)',
         pointerEvents: 'none',
       }} />
 
@@ -93,7 +93,7 @@ export default function Hero() {
           <p style={{
             fontFamily: 'var(--font-mono)', fontSize: '.56rem',
             letterSpacing: '.18em', textTransform: 'uppercase',
-            color: 'rgba(232,99,10,0.9)', marginBottom: '.875rem',
+            color: 'rgba(0,180,216,0.9)', marginBottom: '.875rem',
           }}>Architecture health signals</p>
 
           <p style={{

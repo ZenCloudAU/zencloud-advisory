@@ -1,4 +1,4 @@
-function engageAI() {
+﻿function engageAI() {
   window.location.href = 'mailto:phil@zencloud.com.au?subject=AI%20Advisory%20Enquiry'
 }
 
@@ -16,7 +16,7 @@ export default function AiDeliverySection() {
       }} />
       <div style={{
         position: 'absolute', top: 0, left: 0, bottom: 0, right: 0,
-        backgroundImage: 'repeating-linear-gradient(-45deg, rgba(232,99,10,0.025) 0px, rgba(232,99,10,0.025) 1px, transparent 1px, transparent 28px)',
+        backgroundImage: 'repeating-linear-gradient(-45deg, rgba(0,180,216,0.025) 0px, rgba(0,180,216,0.025) 1px, transparent 1px, transparent 28px)',
         pointerEvents: 'none',
       }} />
 

@@ -1,4 +1,4 @@
-function bookConversation() {
+﻿function bookConversation() {
   window.location.href = 'mailto:phil@zencloud.com.au?subject=Book%20a%20Conversation'
 }
 
@@ -12,7 +12,7 @@ export default function ContactSection() {
       <div style={{
         position: 'absolute', top: '-20%', left: '50%', transform: 'translateX(-50%)',
         width: '80%', height: '130%',
-        background: 'radial-gradient(ellipse, rgba(232,99,10,0.12) 0%, transparent 60%)',
+        background: 'radial-gradient(ellipse, rgba(0,180,216,0.12) 0%, transparent 60%)',
         pointerEvents: 'none',
       }} />
 
@@ -20,7 +20,7 @@ export default function ContactSection() {
         <p style={{
           fontFamily: 'var(--font-mono)', fontSize: '.6rem',
           letterSpacing: '.22em', textTransform: 'uppercase',
-          color: 'rgba(232,99,10,0.8)', marginBottom: '.85rem',
+          color: 'rgba(0,180,216,0.8)', marginBottom: '.85rem',
         }}>Let's talk</p>
         <h2 style={{
           fontFamily: 'var(--font-display)',
