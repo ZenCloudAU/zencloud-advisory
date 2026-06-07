@@ -1,4 +1,4 @@
-export default function EcosystemFooter() {
+﻿export default function EcosystemFooter() {
   return (
     <footer className="ecosystem-footer">
       <div className="ecosystem-footer__brand">

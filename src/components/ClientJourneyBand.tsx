@@ -1,4 +1,4 @@
-export default function ClientJourneyBand() {
+﻿export default function ClientJourneyBand() {
   return (
     <div style={{
       background: 'var(--bg-alt)',

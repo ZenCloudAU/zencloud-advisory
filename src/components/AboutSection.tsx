@@ -1,4 +1,4 @@
-const insights = [
+﻿const insights = [
   {
     tag: 'Cloud Governance',
     title: 'The #1 mistake enterprises make with cloud — and how to fix the foundation',

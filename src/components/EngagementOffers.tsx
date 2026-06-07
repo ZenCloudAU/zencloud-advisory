@@ -1,4 +1,4 @@
-function bookConversation(subject = 'Book a Conversation') {
+﻿function bookConversation(subject = 'Book a Conversation') {
   window.location.href = `mailto:phil@zencloud.com.au?subject=${encodeURIComponent(subject)}`
 }
 

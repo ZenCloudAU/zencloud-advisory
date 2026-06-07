@@ -1,4 +1,4 @@
-import type { EngagementOffer } from '../data/offers'
+﻿import type { EngagementOffer } from '../data/offers'
 import { engagementOffers } from '../data/offers'
 
 interface OfferPageProps {

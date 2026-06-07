@@ -1,4 +1,4 @@
-export interface EngagementOffer {
+﻿export interface EngagementOffer {
   slug: string
   label: string
   title: string

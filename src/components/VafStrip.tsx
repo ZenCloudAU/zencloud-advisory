@@ -1,4 +1,4 @@
-const cells = [
+﻿const cells = [
   { tag: 'VP1', body: 'Direction & governance', blue: false },
   { tag: 'VP2', body: 'Solution strategy', blue: false },
   { tag: 'VP3', body: 'Solution design', blue: false },

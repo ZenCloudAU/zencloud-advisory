@@ -1,4 +1,4 @@
-const channels = [
+﻿const channels = [
   {
     name: 'Velocity Publication Library',
     label: 'Research, patterns, guides and artefacts',

@@ -1,4 +1,4 @@
-const tools = [
+﻿const tools = [
   {
     name: 'EA Artefact Generator',
     role: 'Architecture artefact workspace',

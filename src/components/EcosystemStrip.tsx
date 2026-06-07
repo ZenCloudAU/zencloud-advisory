@@ -1,4 +1,4 @@
-export default function EcosystemStrip() {
+﻿export default function EcosystemStrip() {
   return (
     <nav className="ecosystem-strip" aria-label="Ecosystem navigation">
       <span className="ecosystem-strip__label">Velocity Ecosystem</span>

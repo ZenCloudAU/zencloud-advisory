@@ -16,16 +16,16 @@
   --text-ghost:        #94a3b8;
   --text-footer:       #334155;
 
-  --accent-amber:      #00B4D8;
-  --accent-amber-dark: #0096B4;
-  --accent-amber-body: #007A9B;
+  --accent-amber:      #E8630A;
+  --accent-amber-dark: #CC5508;
+  --accent-amber-body: #a33300;
   --accent-gold:       #fbbf24;
   --accent-blue:       #1e40af;
 
   --border:            #e2e8f0;
   --border-strong:     #cbd5e1;
   --border-amber:      #fde68a;
-  --border-anchor:     #00B4D8;
+  --border-anchor:     #E8630A;
 
   --footer-bg:         #1e3a5f;
 
@@ -47,8 +47,8 @@
   --vaf-text-3:         var(--text-ghost);
   --vaf-accent:         var(--accent-amber);
   --vaf-accent-hover:   var(--accent-amber-dark);
-  --vaf-accent-subtle:  rgba(0,180,216,0.08);
-  --vaf-accent-border:  rgba(0,180,216,0.3);
+  --vaf-accent-subtle:  rgba(232,99,10,0.08);
+  --vaf-accent-border:  rgba(232,99,10,0.3);
   --vaf-navy:           #1E3A5F;
   --vaf-navy-dark:      #162D4A;
   --vaf-font-heading:   var(--font-display);
@@ -64,10 +64,10 @@
 
 /* Conversion redesign additions */
 :root {
-  --orange:          #00B4D8;
-  --orange-dark:     #0096B4;
-  --orange-dim:      rgba(0,180,216,0.08);
-  --orange-border:   rgba(0,180,216,0.25);
+  --orange:          #E8630A;
+  --orange-dark:     #CC5508;
+  --orange-dim:      rgba(232,99,10,0.08);
+  --orange-border:   rgba(232,99,10,0.25);
   --navy-dim:        rgba(30,58,95,0.55);
   --navy-muted:      rgba(30,58,95,0.38);
   --navy-bg:         #1e3a5f;
@@ -109,9 +109,9 @@ ul { list-style: none; }
   transition: background 0.18s, transform 0.12s, box-shadow 0.18s;
 }
 .zc-btn-primary:hover {
-  background: #0096B4;
+  background: #CC5508;
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(0,180,216,0.35);
+  box-shadow: 0 4px 16px rgba(232,99,10,0.35);
 }
 
 .zc-btn-secondary {
@@ -128,8 +128,8 @@ ul { list-style: none; }
   transition: background 0.18s, border-color 0.18s, transform 0.12s;
 }
 .zc-btn-secondary:hover {
-  background: rgba(0,180,216,0.14);
-  border-color: rgba(0,180,216,0.45);
+  background: rgba(232,99,10,0.14);
+  border-color: rgba(232,99,10,0.45);
   transform: translateY(-1px);
 }
 
@@ -161,7 +161,7 @@ ul { list-style: none; }
   transition: background 0.18s, transform 0.12s;
 }
 .zc-nav-cta:hover {
-  background: #0096B4;
+  background: #CC5508;
   transform: translateY(-1px);
 }
 
@@ -169,7 +169,7 @@ ul { list-style: none; }
   color: var(--accent-amber);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid rgba(0,180,216,0.35);
+  border-bottom: 1px solid rgba(232,99,10,0.35);
   padding-bottom: 1px;
   transition: border-color 0.15s, color 0.15s;
 }

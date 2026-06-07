@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section style={{
       padding: '5rem 3rem 4.5rem',
-      background: 'var(--color-primary)',
+      background: '#ffffff',
       borderBottom: '1px solid var(--border)',
       position: 'relative', overflow: 'hidden',
     }}>
@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Diagonal texture */}
       <div style={{
         position: 'absolute', top: 0, left: 0, bottom: 0, width: '60%',
-        backgroundImage: 'repeating-linear-gradient(-45deg, rgba(0,180,216,0.025) 0px, rgba(0,180,216,0.025) 1px, transparent 1px, transparent 28px)',
+        backgroundImage: 'repeating-linear-gradient(-45deg, rgba(232,99,10,0.025) 0px, rgba(232,99,10,0.025) 1px, transparent 1px, transparent 28px)',
         pointerEvents: 'none',
       }} />
 
@@ -42,7 +42,7 @@ export default function Hero() {
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(2.6rem, 5.5vw, 4.4rem)',
             fontWeight: 900, lineHeight: 1.02, letterSpacing: '-.025em',
-            color: 'var(--color-text-light)', marginBottom: '1.5rem',
+            color: 'var(--text-primary)', marginBottom: '1.5rem',
           }}>
             Cloud treated as<br />an IT project?
             <em style={{
@@ -53,7 +53,7 @@ export default function Hero() {
 
           <p style={{
             fontSize: '1.05rem', fontWeight: 300, lineHeight: 1.75,
-            color: 'rgba(248,250,252,0.72)', maxWidth: 520, marginBottom: '2.75rem',
+            color: 'var(--navy-dim)', maxWidth: 520, marginBottom: '2.75rem',
           }}>
             ZenCloud fixes the foundation — governance, architecture decisions,
             and cloud strategy aligned to business outcomes. Not vendor roadmaps.
@@ -79,7 +79,7 @@ export default function Hero() {
 
         {/* Right — dark diagnostic panel */}
         <aside style={{
-          background: 'var(--color-panel)',
+          background: 'var(--navy-bg)',
           borderRadius: 8,
           padding: '2rem',
           position: 'relative',
@@ -93,7 +93,7 @@ export default function Hero() {
           <p style={{
             fontFamily: 'var(--font-mono)', fontSize: '.56rem',
             letterSpacing: '.18em', textTransform: 'uppercase',
-            color: 'rgba(0,180,216,0.9)', marginBottom: '.875rem',
+            color: 'rgba(232,99,10,0.9)', marginBottom: '.875rem',
           }}>Architecture health signals</p>
 
           <p style={{
