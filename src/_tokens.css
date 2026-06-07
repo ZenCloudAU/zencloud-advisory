@@ -3,13 +3,13 @@
   --color-accent: #E8630A;
   --color-surface: #F8FAFC;
   --color-panel: #1A2B3C;
-  --color-text-primary: #0F1E2E;
+  --color-text-primary: #1E3A5F;
   --color-text-light: #F8FAFC;
   --color-text-muted: #64748B;
   --color-border: #E2E8F0;
-  --font-heading: 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
