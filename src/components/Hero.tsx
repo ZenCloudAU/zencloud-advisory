@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section style={{
       padding: '5rem 3rem 4.5rem',
-      background: '#ffffff',
+      background: 'var(--color-primary)',
       borderBottom: '1px solid var(--border)',
       position: 'relative', overflow: 'hidden',
     }}>
@@ -42,7 +42,7 @@ export default function Hero() {
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(2.6rem, 5.5vw, 4.4rem)',
             fontWeight: 900, lineHeight: 1.02, letterSpacing: '-.025em',
-            color: 'var(--text-primary)', marginBottom: '1.5rem',
+            color: 'var(--color-text-light)', marginBottom: '1.5rem',
           }}>
             Cloud treated as<br />an IT project?
             <em style={{
@@ -53,7 +53,7 @@ export default function Hero() {
 
           <p style={{
             fontSize: '1.05rem', fontWeight: 300, lineHeight: 1.75,
-            color: 'var(--navy-dim)', maxWidth: 520, marginBottom: '2.75rem',
+            color: 'rgba(248,250,252,0.72)', maxWidth: 520, marginBottom: '2.75rem',
           }}>
             ZenCloud fixes the foundation — governance, architecture decisions,
             and cloud strategy aligned to business outcomes. Not vendor roadmaps.
@@ -79,7 +79,7 @@ export default function Hero() {
 
         {/* Right — dark diagnostic panel */}
         <aside style={{
-          background: 'var(--navy-bg)',
+          background: 'var(--color-panel)',
           borderRadius: 8,
           padding: '2rem',
           position: 'relative',

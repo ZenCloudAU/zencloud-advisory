@@ -6,11 +6,13 @@ import AdvisoryServices from './components/AdvisoryServices'
 import EngagementOffers from './components/EngagementOffers'
 import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
-import Footer from './components/Footer'
+import EcosystemStrip from './components/EcosystemStrip'
+import EcosystemFooter from './components/EcosystemFooter'
 
 export default function App() {
   return (
     <>
+      <EcosystemStrip />
       <Nav />
       <main>
         <Hero />
@@ -21,7 +23,7 @@ export default function App() {
         <AboutSection />
         <ContactSection />
       </main>
-      <Footer />
+      <EcosystemFooter />
     </>
   )
 }
