@@ -30,6 +30,7 @@
   font-size: 0.75rem;
   font-family: var(--font-body);
   border-bottom: 1px solid var(--color-panel);
+  flex-wrap: wrap;
 }
 .ecosystem-strip__label {
   color: var(--color-text-muted);
@@ -69,6 +70,7 @@
   flex-wrap: wrap;
   margin-bottom: var(--space-md);
   list-style: none;
+  padding: 0;
 }
 .ecosystem-footer__links a {
   color: var(--color-accent);
