@@ -1,12 +1,12 @@
 ﻿const channels = [
   {
-    name: 'Velocity Publication Library',
+    name: 'Velocity™ Publication Library',
     label: 'Research, patterns, guides and artefacts',
     body: 'Rendered public library for research papers, cloud and architecture patterns, diagnostics, guides, specifications, templates, viewpoints, and selected artefacts.',
-    href: 'https://zencloudau.github.io/velocity-architecture/publications/',
+    href: 'https://velocityarchitectureframework.com/publications/',
   },
   {
-    name: 'Velocity Research Library',
+    name: 'Velocity™ Research Library',
     label: 'Rendered research papers',
     body: 'Reader-facing HTML research library for working papers, governance analysis, framework comparisons, and source-backed Markdown rendering.',
     href: 'https://velocityarchitectureframework.com/research/',
@@ -24,16 +24,10 @@
     href: 'https://medium.com/@ZencloudAU',
   },
   {
-    name: 'Velocity Academy',
-    label: 'Structured learning',
-    body: 'Courses, practitioner pathways, certification pilots, concepts, resources, and knowledge portal.',
-    href: 'https://velocityarchitecture.com.au/',
-  },
-  {
-    name: 'Velocity Framework',
+    name: 'Velocity™',
     label: 'Method authority',
     body: 'Decision-first architecture method, viewpoints, artefacts, operating model, and framework documentation.',
-    href: 'https://zencloudau.github.io/velocity-architecture/',
+    href: 'https://velocityarchitectureframework.com/',
   },
 ]
 

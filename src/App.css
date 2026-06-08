@@ -36,7 +36,6 @@
   --font-body:    'DM Sans', sans-serif;
   --font-mono:    'DM Mono', monospace;
 
-  /* VAF master design system tokens */
   --vaf-bg:             var(--bg-page);
   --vaf-surface:        var(--bg-surface);
   --vaf-surface-raised: var(--bg-alt);

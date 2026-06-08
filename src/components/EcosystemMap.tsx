@@ -1,15 +1,15 @@
 ﻿const nodes = [
   {
     role: 'ADVISORY · ENTRY POINT',
-    name: 'ZenCloud Advisory',
+    name: 'ZenCloud™',
     desc: 'Client entry. Strategy, leadership, security, oversight. Routes to StudioSix for delivery.',
-    link: null,
-    linkText: 'zencloud.com.au',
+    link: 'https://www.zencloud.com.au',
+    linkText: 'zencloud.com.au ↗',
     anchor: true,
   },
   {
     role: 'DELIVERY STUDIO',
-    name: 'StudioSix',
+    name: 'StudioSix™',
     desc: 'Architecture-led AI delivery. Intake → artefacts → execution → handover.',
     link: 'https://studiosix.com.au',
     linkText: 'studiosix.com.au ↗',
@@ -17,42 +17,10 @@
   },
   {
     role: 'FRAMEWORK · OPEN SOURCE',
-    name: 'Velocity Architecture Framework™',
+    name: 'Velocity™',
     desc: 'Six viewpoints, 18 artefacts. Decision-first EA. Free to use.',
     link: 'https://velocityarchitectureframework.com/',
     linkText: 'velocityarchitectureframework.com ↗',
-    anchor: false,
-  },
-  {
-    role: 'AI TOOLING',
-    name: 'Velocity Agentic Architect',
-    desc: 'AI agent generating board-ready architecture packs across all six viewpoints. Brief in, governed artefacts out.',
-    link: 'https://velocityarchitectureframework.com/app/portal.html',
-    linkText: 'velocityarchitectureframework.com ↗',
-    anchor: false,
-  },
-  {
-    role: 'PRACTITIONER METHOD',
-    name: 'Velocity SA',
-    desc: 'Solution architecture practitioner framework. Six modules, two pillars, decision-first scoping through delivery.',
-    link: 'https://zencloudau.github.io/vaf-sa/',
-    linkText: 'zencloudau.github.io/vaf-sa ↗',
-    anchor: false,
-  },
-  {
-    role: 'EA TOOLING · TOGAF 10',
-    name: 'EA Artefact Generator',
-    desc: 'TOGAF 10 ADM aligned. 29 artefact types. Production-quality EA outputs across every ADM phase.',
-    link: 'https://ea.velocityarchitecture.com.au',
-    linkText: 'ea.velocityarchitecture.com.au ↗',
-    anchor: false,
-  },
-  {
-    role: 'LEARNING · CERTIFICATION',
-    name: 'Velocity Architecture Academy',
-    desc: 'Courses, certification pathways, books, lexicon, and practitioner resources for architecture leaders and delivery teams.',
-    link: 'https://velocityarchitecture.com.au',
-    linkText: 'velocityarchitecture.com.au ↗',
     anchor: false,
   },
   {
@@ -82,12 +50,12 @@ export default function EcosystemMap() {
         <h2 style={{
           fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 700,
           letterSpacing: '-0.5px', color: 'var(--text-primary)', marginBottom: 8,
-        }}>The Velocity Architecture ecosystem</h2>
+        }}>The ZenCloud ecosystem</h2>
 
         <p style={{
           fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300,
           color: 'var(--text-muted)', maxWidth: 480, marginBottom: 36,
-        }}>Eight connected nodes. One advisory parent. Clients enter through ZenCloud and route to the right layer.</p>
+        }}>Three connected layers. One advisory parent. Clients enter through ZenCloud and route to the right layer.</p>
 
         <div className="zc-ecosystem-grid">
           {nodes.map(node => (

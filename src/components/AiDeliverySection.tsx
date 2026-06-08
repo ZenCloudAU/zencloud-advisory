@@ -43,7 +43,7 @@ export default function AiDeliverySection() {
             color: 'rgba(241,245,249,0.72)', maxWidth: 600, marginBottom: '1.25rem',
           }}>
             ZenCloud Advisory supports enterprise AI architecture, governance and delivery
-            — powered by the Velocity Architecture Framework.
+            — powered by Velocity™.
           </p>
 
           <p style={{

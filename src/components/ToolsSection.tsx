@@ -1,39 +1,9 @@
 ﻿const tools = [
   {
-    name: 'EA Artefact Generator',
-    role: 'Architecture artefact workspace',
-    body: 'Structured enterprise architecture outputs, board-pack material, and decision-ready artefacts for architecture teams.',
-    href: 'https://ea.velocityarchitecture.com.au',
-  },
-  {
     name: 'PMO Portal',
     role: 'Delivery governance workspace',
     body: 'Delivery mobilisation, intake, governance visibility, artefact lifecycle control, and client transparency.',
     href: null,
-  },
-  {
-    name: 'VAF-SA',
-    role: 'Solution architecture method',
-    body: 'Practitioner pathway for solution architects moving from scoping to decision-ready delivery artefacts.',
-    href: 'https://zencloudau.github.io/vaf-sa/',
-  },
-  {
-    name: 'VSF Match',
-    role: 'Career readiness engine',
-    body: 'CV-to-role alignment, capability scoring, gap analysis, and personalised learning-path routing.',
-    href: 'https://zencloudau.github.io/vsf-match/',
-  },
-  {
-    name: 'Velocity Academy',
-    role: 'Learning and certification layer',
-    body: 'Courses, certification pathways, practitioner resources, books, lexicon, and structured learning assets.',
-    href: 'https://velocityarchitecture.com.au/',
-  },
-  {
-    name: 'ZenCloudAU GitHub',
-    role: 'Source-of-truth build estate',
-    body: 'Public repositories for the Velocity Architecture ecosystem, Academy, tools, courses, and advisory platform.',
-    href: 'https://github.com/ZenCloudAU',
   },
 ]
 

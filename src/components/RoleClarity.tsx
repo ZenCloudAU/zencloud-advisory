@@ -15,7 +15,7 @@
   },
   {
     tag: 'METHOD',
-    name: 'Velocity Architecture Framework™',
+    name: 'Velocity™',
     body: 'The decision-first architecture method. Velocity provides the shared language, viewpoints, artefacts, and governance model behind the work.',
     linkText: 'velocityarchitectureframework.com ↗',
     href: 'https://velocityarchitectureframework.com/',
