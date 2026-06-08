@@ -14,7 +14,7 @@
         <a href="https://github.com/ZenCloudAU/velocity-architecture">GitHub</a>
       </nav>
       <p className="ecosystem-footer__copy">
-        © 2026 Phil Myint / ZenCloud Advisory · Free to use · Free to share · Attribution appreciated
+        © 2026 ZenCloud Global Consultants · All rights reserved
       </p>
     </footer>
   )

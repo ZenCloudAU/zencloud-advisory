@@ -1,5 +1,5 @@
 ﻿function bookConversation() {
-  window.location.href = 'mailto:phil@zencloud.com.au?subject=Book%20a%20Conversation'
+  window.location.href = 'mailto:info@zencloud.com.au?subject=Book%20a%20Conversation'
 }
 
 export default function ContactSection() {
@@ -8,7 +8,6 @@ export default function ContactSection() {
       padding: '7rem 3rem', borderTop: '1px solid var(--border)',
       background: 'var(--navy-bg)', textAlign: 'center', position: 'relative', overflow: 'hidden',
     }}>
-      {/* Orange radial glow */}
       <div style={{
         position: 'absolute', top: '-20%', left: '50%', transform: 'translateX(-50%)',
         width: '80%', height: '130%',
@@ -40,7 +39,7 @@ export default function ContactSection() {
         <p style={{
           marginTop: '.85rem', fontFamily: 'var(--font-mono)',
           fontSize: '.6rem', letterSpacing: '.08em', color: 'rgba(255,255,255,0.3)',
-        }}>phil@zencloud.com.au · Brisbane, Australia</p>
+        }}>info@zencloud.com.au · Brisbane, Australia</p>
       </div>
     </section>
   )
