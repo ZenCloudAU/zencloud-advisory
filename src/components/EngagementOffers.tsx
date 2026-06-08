@@ -1,5 +1,5 @@
 ﻿function bookConversation(subject = 'Book a Conversation') {
-  window.location.href = `mailto:phil@zencloud.com.au?subject=${encodeURIComponent(subject)}`
+  window.location.href = `mailto:info@zencloud.com.au?subject=${encodeURIComponent(subject)}`
 }
 
 const secondary = [

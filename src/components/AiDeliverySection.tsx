@@ -1,5 +1,5 @@
 ﻿function engageAI() {
-  window.location.href = 'mailto:phil@zencloud.com.au?subject=AI%20Advisory%20Enquiry'
+  window.location.href = 'mailto:info@zencloud.com.au?subject=AI%20Advisory%20Enquiry'
 }
 
 export default function AiDeliverySection() {

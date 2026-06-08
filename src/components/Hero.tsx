@@ -34,7 +34,7 @@ export default function Hero() {
             fontWeight: 900, lineHeight: 1.02, letterSpacing: '-.025em',
             color: 'var(--text-primary)', marginBottom: '1.5rem',
           }}>
-            The #1 mistake
+            A common mistake
             <br />enterprises make
             <br />with cloud?
             <em style={{
