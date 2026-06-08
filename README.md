@@ -59,3 +59,5 @@ https://www.zencloud.com.au
 ZenCloud focuses on decision-first advisory:
 
 Turning unclear technology situations into governed execution, practical action plans, and delivery-ready outcomes.
+
+This public repository must not contain client records, private engagement artefacts, credentials, or unpublished operating material.
