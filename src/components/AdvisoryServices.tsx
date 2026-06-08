@@ -61,7 +61,7 @@ function Card({ num, title, body }: typeof services[0]) {
         fontWeight: 600, color: 'var(--text-primary)', marginBottom: '.6rem', lineHeight: 1.3,
       }}>{title}</p>
       <p style={{
-        fontSize: '.78rem', fontWeight: 300, lineHeight: 1.65, color: 'var(--navy-dim)',
+        fontSize: '.78rem', fontWeight: 300, lineHeight: 1.65, color: 'var(--text-secondary)',
       }}>{body}</p>
     </div>
   )
@@ -84,7 +84,7 @@ export default function AdvisoryServices() {
         }}>Six advisory disciplines. One firm.</h2>
         <p style={{
           fontSize: '.92rem', fontWeight: 300, lineHeight: 1.7,
-          color: 'var(--navy-dim)', maxWidth: 520, marginBottom: '2.5rem',
+          color: 'var(--text-secondary)', maxWidth: 520, marginBottom: '2.5rem',
         }}>Senior advisory for organisations that need architecture decisions to become governed execution — not more disconnected artefacts.</p>
 
         {/* 3×2 border-grid */}
