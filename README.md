@@ -26,7 +26,7 @@ The `main` branch is built with `npm run build`; the generated `dist` directory 
 
 ## Licence
 
-ZenCloud Advisory software and content are proprietary to ZenCloud Global Consultants. All rights reserved. See [`LICENSE`](LICENSE).
+ZenCloud Advisory software and content are proprietary to Zencloud Advisory. All rights reserved. See [`LICENSE`](LICENSE).
 
 ---
-© 2026 ZenCloud Global Consultants. All rights reserved. Proprietary and confidential.
+© 2026 Zencloud Advisory. All rights reserved. Proprietary and confidential.
